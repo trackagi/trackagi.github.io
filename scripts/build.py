@@ -226,6 +226,15 @@ def generate_html(data: dict[str, Any]) -> str:
         <main class="feed-shell">
             <div id="timeline" class="timeline-root"></div>
         </main>
+
+        <footer class="site-footer">
+            <span class="footer-credit">Made by <a href="https://dipkumar.dev" target="_blank" rel="noreferrer">dipkumar.dev</a></span>
+            <nav class="footer-links" aria-label="Contribute">
+                <a href="https://github.com/trackagi/trackagi.github.io/issues/new?template=milestone-request.yml" target="_blank" rel="noreferrer">Suggest milestone</a>
+                <a href="https://github.com/trackagi/trackagi.github.io/issues/new?template=bug-report.yml" target="_blank" rel="noreferrer">Report bug</a>
+                <a href="https://github.com/trackagi/trackagi.github.io" target="_blank" rel="noreferrer">Contribute</a>
+            </nav>
+        </footer>
     </div>
 
     <script>
