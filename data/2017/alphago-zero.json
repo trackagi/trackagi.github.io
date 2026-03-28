@@ -2,7 +2,7 @@
   "date": "2017-10-19",
   "title": "AlphaGo Zero: Learning from Scratch",
   "organization": "Google DeepMind",
-  "level": "high",
+  "level": "major",
   "tags": ["google-deepmind", "research-paper", "game-playing", "reinforcement-learning", "ai"],
   "description": "DeepMind introduced AlphaGo Zero, which achieved superhuman Go performance without any human data. Starting from random play, it surpassed all previous versions within 40 days, demonstrating that AI could achieve mastery purely through self-play reinforcement learning.",
   "highlights": [

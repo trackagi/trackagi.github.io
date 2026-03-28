@@ -2,8 +2,14 @@
   "date": "2019-07-26",
   "title": "RoBERTa: Robustly Optimized BERT Approach",
   "organization": "Meta AI",
-  "level": "low",
-  "tags": ["meta-ai", "research-paper", "bert", "llm", "nlp"],
+  "level": "notable",
+  "tags": [
+    "meta-ai",
+    "research-paper",
+    "bert",
+    "llm",
+    "nlp"
+  ],
   "description": "Facebook AI (now Meta AI) introduced RoBERTa, showing that BERT was significantly undertrained. By training longer with bigger batches over more data and removing the next sentence prediction objective, RoBERTa outperformed BERT on all GLUE tasks.",
   "highlights": [
     "Trained longer with bigger batches",

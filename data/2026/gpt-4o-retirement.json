@@ -2,8 +2,14 @@
   "date": "2026-02-13",
   "title": "GPT-4o Retired in ChatGPT",
   "organization": "OpenAI",
-  "level": "low",
-  "tags": ["openai", "milestone", "gpt", "llm", "product-launch"],
+  "level": "notable",
+  "tags": [
+    "openai",
+    "milestone",
+    "gpt",
+    "llm",
+    "product-launch"
+  ],
   "description": "OpenAI retired GPT-4o and several related models from ChatGPT, while keeping them available in the API. The change marked a cleanup of the ChatGPT model lineup as newer GPT-5-family models became the default.",
   "highlights": [
     "GPT-4o removed from ChatGPT",

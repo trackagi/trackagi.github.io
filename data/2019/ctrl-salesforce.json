@@ -2,7 +2,7 @@
   "date": "2019-09-19",
   "title": "CTRL: A Conditional Transformer Language Model for Controllable Generation",
   "organization": "Salesforce",
-  "level": "high",
+  "level": "major",
   "tags": ["research-paper", "ctrl", "controllable-generation", "llm"],
   "description": "Salesforce Research introduced CTRL, a 1.6B parameter conditional transformer that allows control over text generation style and content by prepending control codes. Users could specify domain, style, or topic to steer generation. This was a precursor to modern prompt engineering and instruction following in language models.",
   "highlights": [

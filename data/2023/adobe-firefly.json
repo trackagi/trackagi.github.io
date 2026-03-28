@@ -2,7 +2,7 @@
   "date": "2023-03-21",
   "title": "Adobe Firefly Released",
   "organization": "Adobe",
-  "level": "high",
+  "level": "major",
   "tags": ["adobe", "product-launch", "image-generation", "firefly", "generative-ai"],
   "description": "Adobe released Firefly, a family of generative AI models designed for safe commercial use. Trained on Adobe Stock and public domain content, it addressed copyright concerns that plagued other image generators. Integrated into Photoshop, Illustrator, and Express, it brought AI generation to professional creative workflows.",
   "highlights": [

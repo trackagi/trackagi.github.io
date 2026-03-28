@@ -2,8 +2,14 @@
   "date": "2026-02-19",
   "title": "Gemini 3.1 Pro Released",
   "organization": "Google",
-  "level": "high",
-  "tags": ["google", "model-release", "gemini", "llm", "reasoning"],
+  "level": "major",
+  "tags": [
+    "google",
+    "model-release",
+    "gemini",
+    "llm",
+    "reasoning"
+  ],
   "description": "Google released Gemini 3.1 Pro as an upgraded core intelligence model for consumer and developer products. The release emphasized improved reasoning on complex tasks and broader availability across Gemini, Gemini API, Vertex AI, Gemini CLI, and Google Antigravity.",
   "highlights": [
     "Upgraded core intelligence for Gemini 3",

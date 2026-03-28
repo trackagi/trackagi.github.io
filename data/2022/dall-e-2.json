@@ -2,7 +2,7 @@
   "date": "2022-04-06",
   "title": "DALL-E 2 Released",
   "organization": "OpenAI",
-  "level": "high",
+  "level": "major",
   "tags": ["openai", "model-release", "dalle", "image-generation", "multimodal"],
   "description": "OpenAI released DALL-E 2, a significant upgrade that generated more realistic and accurate images with 4× greater resolution than the original. The model used a CLIP-based architecture and diffusion techniques. It became available to the public via API and web interface, making AI image generation accessible to millions of users.",
   "highlights": [

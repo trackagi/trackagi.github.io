@@ -1,6 +1,6 @@
 # AGI Progress Tracker
 
-A comprehensive timeline of Artificial General Intelligence progress from 2013 to present. This open-source project tracks major releases, research breakthroughs, and product launches from leading AI organizations.
+A comprehensive timeline of Artificial General Intelligence progress from 2010 to present. This open-source project tracks major releases, research breakthroughs, and product launches from leading AI organizations.
 
 **[View Live Timeline →](https://trackagi.github.io)**
 

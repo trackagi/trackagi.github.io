@@ -2,8 +2,14 @@
   "date": "2025-08-07",
   "title": "GPT-5 Released",
   "organization": "OpenAI",
-  "level": "high",
-  "tags": ["openai", "model-release", "gpt", "llm", "multimodal"],
+  "level": "major",
+  "tags": [
+    "openai",
+    "model-release",
+    "gpt",
+    "llm",
+    "multimodal"
+  ],
   "description": "OpenAI released GPT-5, its smartest and most useful model yet with built-in thinking. The launch emphasized stronger coding, reasoning, writing, health, and multimodal performance, plus a unified system that decides when to answer quickly or think longer.",
   "highlights": [
     "Unified system with built-in thinking",

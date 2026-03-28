@@ -2,8 +2,13 @@
   "date": "2024-04-18",
   "title": "Llama 3: The next generation of open foundation models",
   "organization": "Meta AI",
-  "level": "high",
-  "tags": ["research-paper", "llama", "open-source", "llm"],
+  "level": "major",
+  "tags": [
+    "research-paper",
+    "llama",
+    "open-source",
+    "llm"
+  ],
   "description": "Meta released Llama 3 with 8B and 70B variants, trained on 15 trillion tokens (7x more than Llama 2). The model achieved state-of-the-art results among open models, surpassing GPT-3.5 on many benchmarks. Llama 3 70B even challenged GPT-4 on certain tasks. Meta's focus on data quality, scaling laws, and training stability resulted in exceptional performance.",
   "highlights": [
     "15 trillion tokens (7x Llama 2)",

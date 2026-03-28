@@ -2,7 +2,7 @@
   "date": "2015-02-11",
   "title": "Batch Normalization: Accelerating Deep Network Training",
   "organization": "Google",
-  "level": "high",
+  "level": "major",
   "tags": ["research-paper", "normalization", "deep-learning", "training"],
   "description": "Google researchers introduced Batch Normalization, a technique that normalizes layer inputs to reduce internal covariate shift. This allowed much higher learning rates, reduced training time, and acted as a regularizer. It became essential for training very deep networks like ResNet and is now standard in virtually all deep learning architectures.",
   "highlights": [

@@ -2,7 +2,7 @@
   "date": "2018-06-11",
   "title": "GPT-1: Improving Language Understanding by Generative Pre-Training",
   "organization": "OpenAI",
-  "level": "high",
+  "level": "major",
   "tags": ["openai", "research-paper", "gpt", "llm", "transformer"],
   "description": "OpenAI introduced GPT-1 (Generative Pre-trained Transformer), demonstrating that unsupervised pre-training on large text corpora followed by supervised fine-tuning could achieve state-of-the-art results on various NLP benchmarks. This established the pre-training paradigm.",
   "highlights": [

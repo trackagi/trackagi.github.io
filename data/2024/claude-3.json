@@ -2,7 +2,7 @@
   "date": "2024-03-04",
   "title": "Claude 3 Model Family Released",
   "organization": "Anthropic",
-  "level": "high",
+  "level": "major",
   "tags": ["anthropic", "model-release", "claude", "llm", "multimodal"],
   "description": "Anthropic released the Claude 3 family (Haiku, Sonnet, Opus), featuring near-human comprehension levels and vision capabilities. Claude 3 Opus set new benchmarks, outperforming GPT-4 on many tasks. All models featured improved speed, accuracy, and 200K context windows.",
   "highlights": [

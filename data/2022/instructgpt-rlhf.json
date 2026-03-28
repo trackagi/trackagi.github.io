@@ -2,7 +2,7 @@
   "date": "2022-03-04",
   "title": "Training language models to follow instructions with human feedback",
   "organization": "OpenAI",
-  "level": "high",
+  "level": "major",
   "tags": ["research-paper", "rlhf", "instructgpt", "alignment"],
   "description": "OpenAI introduced InstructGPT using RLHF (Reinforcement Learning from Human Feedback). The paper showed that 1.3B parameter InstructGPT outperformed 175B GPT-3 on following instructions, demonstrating that alignment with human preferences matters more than scale. This became the foundation for ChatGPT and modern alignment techniques.",
   "highlights": [

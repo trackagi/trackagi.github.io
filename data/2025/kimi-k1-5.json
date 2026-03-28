@@ -2,8 +2,13 @@
   "date": "2025-01-13",
   "title": "Kimi k1.5: Scaling Reinforcement Learning with LLMs",
   "organization": "Moonshot AI",
-  "level": "high",
-  "tags": ["model-release", "reasoning", "reinforcement-learning", "kimi"],
+  "level": "major",
+  "tags": [
+    "model-release",
+    "reasoning",
+    "reinforcement-learning",
+    "kimi"
+  ],
   "description": "Moonshot AI released Kimi k1.5, demonstrating that reinforcement learning with long chain-of-thought reasoning can achieve state-of-the-art performance on complex tasks. The model showed strong reasoning capabilities through extensive RL training, achieving competitive results against top models on math, coding, and reasoning benchmarks without relying on massive supervised datasets.",
   "highlights": [
     "Long chain-of-thought reasoning",

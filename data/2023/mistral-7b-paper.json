@@ -2,7 +2,7 @@
   "date": "2023-09-27",
   "title": "Mistral 7B: A 7-billion-parameter language model",
   "organization": "Mistral AI",
-  "level": "high",
+  "level": "major",
   "tags": ["research-paper", "mistral", "open-source", "sliding-window"],
   "description": "Mistral AI released Mistral 7B, an open-source model that outperformed Llama 2 13B and approached Llama 1 34B performance. It introduced grouped-query attention (GQA) and sliding window attention (SWA) for faster inference. The model became the foundation for many open-source fine-tunes and demonstrated that smaller, well-designed models can compete with larger ones.",
   "highlights": [

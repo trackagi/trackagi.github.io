@@ -2,8 +2,14 @@
   "date": "2024-05-14",
   "title": "Google Veo Video Generation Model",
   "organization": "Google",
-  "level": "high",
-  "tags": ["google", "model-release", "video-generation", "generative-ai", "multimodal"],
+  "level": "major",
+  "tags": [
+    "google",
+    "model-release",
+    "video-generation",
+    "generative-ai",
+    "multimodal"
+  ],
   "description": "Google announced Veo, its most capable video generation model, at Google I/O 2024. Veo could generate high-quality 1080p videos from text prompts, with coherent storytelling and realistic physics. It offered features like cinematic styles, camera controls, and extended clip generation, positioning Google as a major competitor in AI video generation.",
   "highlights": [
     "1080p video generation",

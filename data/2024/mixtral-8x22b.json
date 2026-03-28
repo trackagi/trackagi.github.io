@@ -2,8 +2,14 @@
   "date": "2024-04-17",
   "title": "Mixtral 8x22B Released",
   "organization": "Mistral AI",
-  "level": "high",
-  "tags": ["mistral", "model-release", "open-source", "mixture-of-experts", "mixtral"],
+  "level": "major",
+  "tags": [
+    "mistral",
+    "model-release",
+    "open-source",
+    "mixture-of-experts",
+    "mixtral"
+  ],
   "description": "Mistral AI released Mixtral 8x22B, the largest and most capable open-source MoE model to date. With 141B total parameters (39B active per token), it outperformed GPT-3.5 Turbo, Grok-1, and Llama 2 70B across most benchmarks. The model achieved strong performance on multilingual tasks, math, and coding while maintaining efficient inference through sparse activation.",
   "highlights": [
     "141B parameters, 39B active per token",

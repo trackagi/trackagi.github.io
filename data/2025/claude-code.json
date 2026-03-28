@@ -2,8 +2,14 @@
   "date": "2025-02-25",
   "title": "Claude Code Released",
   "organization": "Anthropic",
-  "level": "high",
-  "tags": ["anthropic", "product-launch", "claude", "coding", "agent"],
+  "level": "major",
+  "tags": [
+    "anthropic",
+    "product-launch",
+    "claude",
+    "coding",
+    "agent"
+  ],
   "description": "Anthropic released Claude Code, an agentic coding tool that works directly in the terminal. It can search and read code, edit files, run tests, and use command-line tools. Integrated with Claude 3.7 Sonnet, it achieved state-of-the-art performance on SWE-bench Verified.",
   "highlights": [
     "Terminal-integrated agentic coding",

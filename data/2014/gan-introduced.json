@@ -2,7 +2,7 @@
   "date": "2014-06-10",
   "title": "Generative Adversarial Networks (GANs)",
   "organization": "University of Montreal",
-  "level": "high",
+  "level": "landmark",
   "tags": ["research-paper", "generative-ai", "deep-learning", "gan"],
   "description": "Ian Goodfellow and colleagues introduced Generative Adversarial Networks (GANs), a revolutionary framework where two neural networks compete: a generator creates synthetic data while a discriminator evaluates authenticity. This opened new frontiers in generative AI.",
   "highlights": [

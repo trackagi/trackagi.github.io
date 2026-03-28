@@ -1,0 +1,27 @@
+{
+  "date": "2025-09-29",
+  "title": "Claude Sonnet 4.5 Released",
+  "organization": "Anthropic",
+  "level": "major",
+  "tags": [
+    "anthropic",
+    "model-release",
+    "claude",
+    "coding",
+    "agent"
+  ],
+  "description": "Anthropic released Claude Sonnet 4.5, describing it as the best coding model in the world and the strongest model for building complex agents. The release added major upgrades to Claude Code, the API, and the Claude app experience.",
+  "highlights": [
+    "Best coding model in the world",
+    "Strongest model for complex agents",
+    "Major Claude Code improvements",
+    "Context editing and memory tool in the API",
+    "Checkpoints and native VS Code extension"
+  ],
+  "sources": [
+    {
+      "title": "Introducing Claude Sonnet 4.5",
+      "url": "https://www.anthropic.com/news/claude-sonnet-4-5"
+    }
+  ]
+}

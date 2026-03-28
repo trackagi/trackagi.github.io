@@ -2,8 +2,14 @@
   "date": "2024-02-01",
   "title": "OLMo: Truly Open Language Model Released",
   "organization": "Allen Institute for AI",
-  "level": "high",
-  "tags": ["allen-institute-for-ai", "model-release", "open-source", "olmo", "llm"],
+  "level": "major",
+  "tags": [
+    "allen-institute-for-ai",
+    "model-release",
+    "open-source",
+    "olmo",
+    "llm"
+  ],
   "description": "AI2 released OLMo (Open Language Model), setting a new standard for transparency in open-source AI. Unlike other 'open' models, OLMo released complete training data (Dolma), full training code, model weights, and intermediate checkpoints. This enabled researchers to fully reproduce, study, and build upon the model, advancing open science and reproducibility in AI.",
   "highlights": [
     "Complete training data released (Dolma)",

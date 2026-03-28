@@ -2,7 +2,7 @@
   "date": "2023-02-07",
   "title": "Microsoft Bing Chat with GPT-4",
   "organization": "Microsoft",
-  "level": "high",
+  "level": "major",
   "tags": ["microsoft", "product-launch", "gpt", "llm", "search"],
   "description": "Microsoft announced Bing Chat, integrating OpenAI's GPT-4 into Bing search. This marked the beginning of AI-powered search wars and demonstrated GPT-4's capabilities before its official announcement, shaking up the search industry dominated by Google.",
   "highlights": [

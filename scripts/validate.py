@@ -67,7 +67,7 @@ VALID_ORGANIZATIONS = [
     "Black Forest Labs",
     "Midjourney",
 ]
-VALID_LEVELS = ["high", "low"]
+VALID_LEVELS = ["landmark", "major", "notable", "minor"]
 VALID_TAGS = {
     # Organizations
     "anthropic",
@@ -104,12 +104,19 @@ VALID_TAGS = {
     "acquisition",
     "api-release",
     "benchmark",
+    "benchmark-result",
+    "funding",
+    "infrastructure",
     "model-release",
+    "model-update",
     "open-source",
     "partnership",
+    "policy",
+    "pricing",
     "product-launch",
     "regulation",
     "research-paper",
+    "valuation",
     # Capabilities
     "agent",
     "coding",
@@ -198,6 +205,8 @@ VALID_TAGS = {
     "adobe",
     "flux",
     "sora",
+    "opus",
+    "sonnet",
     # Product and ecosystem tags
     "bard",
     "claude-code",
@@ -232,7 +241,7 @@ def validate_date(date_str: str) -> tuple[bool, str]:
         year, month, day = int(date_str[:4]), int(date_str[5:7]), int(date_str[8:])
         if not (1 <= month <= 12 and 1 <= day <= 31):
             return False, f"Invalid date values: {date_str}"
-        if year < 2013 or year > 2100:
+        if year < 2010 or year > 2100:
             return False, f"Year out of reasonable range: {year}"
     except ValueError:
         return False, f"Invalid date: {date_str}"

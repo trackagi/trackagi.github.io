@@ -2,7 +2,7 @@
   "date": "2014-12-22",
   "title": "Adam: A Method for Stochastic Optimization",
   "organization": "University of Toronto",
-  "level": "high",
+  "level": "major",
   "tags": ["research-paper", "optimization", "deep-learning", "adam"],
   "description": "Diederik Kingma and Jimmy Ba introduced Adam, an adaptive learning rate optimization algorithm. Adam combines the benefits of AdaGrad and RMSProp, computing adaptive learning rates for each parameter. It became the default optimizer for training deep neural networks and is used in virtually all modern deep learning frameworks.",
   "highlights": [

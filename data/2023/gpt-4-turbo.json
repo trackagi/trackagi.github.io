@@ -2,7 +2,7 @@
   "date": "2023-11-06",
   "title": "OpenAI GPT-4 Turbo Released",
   "organization": "OpenAI",
-  "level": "high",
+  "level": "major",
   "tags": ["openai", "model-release", "gpt", "llm", "long-context"],
   "description": "OpenAI released GPT-4 Turbo with a 128K context window (4× larger than previous GPT-4), knowledge cutoff updated to April 2023, and significantly lower pricing. It also introduced JSON mode and reproducible outputs, making it more practical for production applications.",
   "highlights": [

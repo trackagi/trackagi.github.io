@@ -2,8 +2,15 @@
   "date": "2024-12-05",
   "title": "OpenAI o1 and o1 Pro Released",
   "organization": "OpenAI",
-  "level": "high",
-  "tags": ["openai", "model-release", "o1", "reasoning", "llm", "arc-agi"],
+  "level": "major",
+  "tags": [
+    "openai",
+    "model-release",
+    "o1",
+    "reasoning",
+    "llm",
+    "arc-agi"
+  ],
   "description": "OpenAI released the full o1 model and o1 Pro Mode, featuring enhanced reasoning capabilities and extended thinking time. o1 demonstrated strong performance on math, science, and coding tasks, including continued improvements on the ARC-AGI abstract reasoning benchmark. The release also brought o1-mini to all ChatGPT users, democratizing access to reasoning models.",
   "highlights": [
     "Full o1 model released",

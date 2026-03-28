@@ -1,0 +1,26 @@
+{
+  "date": "2025-07-11",
+  "title": "Official Release of Kimi K2",
+  "organization": "Moonshot AI",
+  "level": "major",
+  "tags": [
+    "model-release",
+    "kimi",
+    "llm",
+    "reasoning",
+    "product-launch"
+  ],
+  "description": "Moonshot AI officially released Kimi K2, positioning it as a high-speed model with strong reasoning and tool-use capabilities. The launch formed the base of the later Kimi K2 turbo and Kimi K2.5 ecosystem.",
+  "highlights": [
+    "Official Kimi K2 model release",
+    "Base for later Kimi turbo variants",
+    "Reasoning and tool-use focus",
+    "Important platform milestone for Moonshot AI"
+  ],
+  "sources": [
+    {
+      "title": "Kimi Open Platform: New Feature Release Log",
+      "url": "https://platform.moonshot.ai/blog/posts/changelog"
+    }
+  ]
+}

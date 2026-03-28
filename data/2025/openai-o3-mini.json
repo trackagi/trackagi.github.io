@@ -2,8 +2,14 @@
   "date": "2025-01-31",
   "title": "OpenAI o3-mini Released",
   "organization": "OpenAI",
-  "level": "high",
-  "tags": ["openai", "model-release", "o3", "reasoning", "llm"],
+  "level": "major",
+  "tags": [
+    "openai",
+    "model-release",
+    "o3",
+    "reasoning",
+    "llm"
+  ],
   "description": "OpenAI released o3-mini, a cost-efficient reasoning model optimized for coding, math, and science. It offered adjustable reasoning effort levels and was made available to free ChatGPT users, democratizing access to reasoning capabilities while maintaining strong performance.",
   "highlights": [
     "Cost-efficient reasoning model",

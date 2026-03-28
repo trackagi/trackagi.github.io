@@ -2,7 +2,7 @@
   "date": "2023-07-11",
   "title": "Claude 2 Released",
   "organization": "Anthropic",
-  "level": "high",
+  "level": "major",
   "tags": ["anthropic", "model-release", "claude", "llm", "long-context"],
   "description": "Anthropic released Claude 2, featuring 100K token context window, improved reasoning and coding capabilities, and strong safety measures. It achieved 71.2% on the Codex HumanEval coding benchmark and demonstrated Claude's focus on helpful, harmless, and honest AI.",
   "highlights": [

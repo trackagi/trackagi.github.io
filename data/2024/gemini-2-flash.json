@@ -2,8 +2,14 @@
   "date": "2024-12-11",
   "title": "Google Gemini 2.0 Flash Released",
   "organization": "Google",
-  "level": "high",
-  "tags": ["google", "model-release", "gemini", "llm", "multimodal"],
+  "level": "major",
+  "tags": [
+    "google",
+    "model-release",
+    "gemini",
+    "llm",
+    "multimodal"
+  ],
   "description": "Google released Gemini 2.0 Flash, featuring native multimodal output including text, images, and native audio. The model supported 1M token context windows, tool use, and significantly improved speed and quality over 1.5 Flash, representing a major step in AI agent capabilities.",
   "highlights": [
     "Native multimodal output (text, image, audio)",

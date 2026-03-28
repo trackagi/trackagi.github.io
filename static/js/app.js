@@ -15,6 +15,7 @@
 
   var MONTH_SHORT = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   var TAG_LIMIT = 16;
+  var LEVEL_RANK = { landmark: 4, major: 3, notable: 2, minor: 1 };
 
   var ORG_COLORS = {
     'OpenAI': '#0f766e',
@@ -197,7 +198,15 @@
 
   function getFiltered() {
     return state.data.milestones.filter(function (m) {
-      if (state.filters.level !== 'all' && m.level !== state.filters.level) return false;
+      var lf = state.filters.level;
+      if (lf !== 'all') {
+        if (lf.endsWith('+')) {
+          var minRank = LEVEL_RANK[lf.slice(0, -1)] || 0;
+          if ((LEVEL_RANK[m.level] || 0) < minRank) return false;
+        } else {
+          if (m.level !== lf) return false;
+        }
+      }
       if (state.filters.organization !== 'all' && m.organization !== state.filters.organization) return false;
       if (state.filters.tags.size > 0 && !m.tags.some(function (t) { return state.filters.tags.has(t); })) return false;
       if (state.filters.search && !searchText(m).includes(state.filters.search)) return false;

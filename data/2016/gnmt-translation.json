@@ -2,7 +2,7 @@
   "date": "2016-09-26",
   "title": "Google Neural Machine Translation (GNMT)",
   "organization": "Google",
-  "level": "high",
+  "level": "major",
   "tags": ["research-paper", "nlp", "translation", "sequence-to-sequence"],
   "description": "Google introduced GNMT, a neural machine translation system that reduced translation errors by 60% compared to phrase-based systems. The system used a deep LSTM network with 8 encoder and 8 decoder layers with attention mechanisms. It was deployed to Google Translate, translating billions of words daily across 100+ languages.",
   "highlights": [

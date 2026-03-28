@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-04",
+  "title": "Kimi K2.5 API Is Now Available",
+  "organization": "Moonshot AI",
+  "level": "major",
+  "tags": [
+    "model-release",
+    "product-launch",
+    "kimi",
+    "agent",
+    "coding"
+  ],
+  "description": "Moonshot AI announced Kimi K2.5 on its API platform, describing it as its most capable engine yet for sophisticated agents, visual reasoning, and professional-grade coding tools. The release also simplified the lineup by making Turbo-level performance the default.",
+  "highlights": [
+    "Most capable Kimi engine at launch",
+    "Built for agents and tool-calling",
+    "Native vision and visual reasoning",
+    "Strong frontend and coding performance",
+    "Turbo-level performance became the default"
+  ],
+  "sources": [
+    {
+      "title": "Kimi K2.5 API is now available",
+      "url": "https://forum.moonshot.ai/t/kimi-k2-5-api-is-now-available/218"
+    }
+  ]
+}

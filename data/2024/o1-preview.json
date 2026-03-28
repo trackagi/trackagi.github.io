@@ -2,8 +2,15 @@
   "date": "2024-09-12",
   "title": "OpenAI o1 Preview Released",
   "organization": "OpenAI",
-  "level": "high",
-  "tags": ["openai", "model-release", "o1", "reasoning", "llm", "arc-agi"],
+  "level": "major",
+  "tags": [
+    "openai",
+    "model-release",
+    "o1",
+    "reasoning",
+    "llm",
+    "arc-agi"
+  ],
   "description": "OpenAI introduced the o1 series (o1-preview and o1-mini), featuring new large-scale reinforcement learning algorithms that train models to perform complex reasoning. o1 spent more time thinking before responding, achieving PhD-level accuracy on challenging reasoning tasks. On the ARC-AGI benchmark, o1 achieved a breakthrough score of approximately 21%, significantly advancing AI performance on abstract reasoning tasks.",
   "highlights": [
     "Chain-of-thought reasoning",

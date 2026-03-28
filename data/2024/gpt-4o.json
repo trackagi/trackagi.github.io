@@ -2,8 +2,14 @@
   "date": "2024-05-13",
   "title": "OpenAI GPT-4o Released",
   "organization": "OpenAI",
-  "level": "high",
-  "tags": ["openai", "model-release", "gpt", "multimodal", "llm"],
+  "level": "major",
+  "tags": [
+    "openai",
+    "model-release",
+    "gpt",
+    "multimodal",
+    "llm"
+  ],
   "description": "OpenAI released GPT-4o ('o' for omni), their flagship model with native multimodal capabilities across text, audio, and vision. It featured response times as fast as humans (232ms average for audio), 50+ language support, and was made available to free ChatGPT users.",
   "highlights": [
     "Native multimodal (text, audio, vision)",

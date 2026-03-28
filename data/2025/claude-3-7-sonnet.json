@@ -2,8 +2,15 @@
   "date": "2025-02-25",
   "title": "Claude 3.7 Sonnet Released",
   "organization": "Anthropic",
-  "level": "high",
-  "tags": ["anthropic", "model-release", "claude", "llm", "coding", "reasoning"],
+  "level": "major",
+  "tags": [
+    "anthropic",
+    "model-release",
+    "claude",
+    "llm",
+    "coding",
+    "reasoning"
+  ],
   "description": "Anthropic released Claude 3.7 Sonnet, their first hybrid reasoning model that can produce both quick responses and extended thinking for complex tasks. It achieved state-of-the-art performance on SWE-bench Verified (62.3%) and featured enhanced agentic coding capabilities.",
   "highlights": [
     "First hybrid reasoning model",

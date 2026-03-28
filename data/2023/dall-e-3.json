@@ -2,7 +2,7 @@
   "date": "2023-09-20",
   "title": "OpenAI DALL-E 3 Released",
   "organization": "OpenAI",
-  "level": "high",
+  "level": "major",
   "tags": ["openai", "model-release", "dalle", "image-generation", "multimodal"],
   "description": "OpenAI released DALL-E 3, integrated natively into ChatGPT. The model significantly improved image generation quality and understanding of complex prompts. It could render text within images and follow complex multi-paragraph prompts with high fidelity.",
   "highlights": [

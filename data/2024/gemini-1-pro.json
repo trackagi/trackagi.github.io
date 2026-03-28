@@ -2,8 +2,14 @@
   "date": "2024-02-01",
   "title": "Google Gemini 1.0 Pro Public Launch",
   "organization": "Google",
-  "level": "high",
-  "tags": ["google", "model-release", "gemini", "llm", "multimodal"],
+  "level": "major",
+  "tags": [
+    "google",
+    "model-release",
+    "gemini",
+    "llm",
+    "multimodal"
+  ],
   "description": "Google officially launched Gemini 1.0 Pro to the public through Bard, their most capable model yet. Gemini was built from the ground up to be multimodal, trained jointly across text, code, image, and video, with native multimodal capabilities rather than stitched-together models.",
   "highlights": [
     "Native multimodal architecture",

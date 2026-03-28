@@ -2,8 +2,13 @@
   "date": "2024-08-20",
   "title": "Google Gemini 1.5 Flash Released",
   "organization": "Google",
-  "level": "high",
-  "tags": ["google", "model-release", "gemini", "llm"],
+  "level": "major",
+  "tags": [
+    "google",
+    "model-release",
+    "gemini",
+    "llm"
+  ],
   "description": "Google released Gemini 1.5 Flash, a lightweight model optimized for speed and efficiency while maintaining strong performance. It featured the same 1M+ token context window as Pro but at much lower latency and cost, making long-context applications more practical.",
   "highlights": [
     "Lightweight and efficient",

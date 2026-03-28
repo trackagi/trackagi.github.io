@@ -1,0 +1,27 @@
+{
+  "date": "2025-04-16",
+  "title": "OpenAI o3 and o4-mini Released",
+  "organization": "OpenAI",
+  "level": "major",
+  "tags": [
+    "openai",
+    "model-release",
+    "o3",
+    "reasoning",
+    "multimodal"
+  ],
+  "description": "OpenAI released o3 and o4-mini, its latest reasoning models designed to think longer before responding. The launch emphasized stronger visual reasoning, agentic tool use, and major gains in coding, math, and science tasks.",
+  "highlights": [
+    "Latest o-series reasoning models",
+    "Thinking with images and tools",
+    "Strong coding, math, and science performance",
+    "Agentic tool use improvements",
+    "Codex CLI launched alongside the models"
+  ],
+  "sources": [
+    {
+      "title": "Introducing OpenAI o3 and o4-mini",
+      "url": "https://openai.com/index/introducing-o3-and-o4-mini/"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "date": "2023-05-10",
   "title": "Google PaLM 2 and Bard Updates",
   "organization": "Google",
-  "level": "high",
+  "level": "major",
   "tags": ["google", "model-release", "palm", "llm", "bard"],
   "description": "Google announced PaLM 2, their next-generation large language model, along with major updates to Bard. PaLM 2 featured improved multilingual, reasoning, and coding capabilities. This marked Google's serious entry into the chatbot wars against OpenAI's ChatGPT.",
   "highlights": [

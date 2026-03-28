@@ -2,8 +2,13 @@
   "date": "2014-09-04",
   "title": "VGGNet: Very Deep Convolutional Networks",
   "organization": "University of Oxford",
-  "level": "low",
-  "tags": ["research-paper", "vision", "deep-learning", "cnn"],
+  "level": "notable",
+  "tags": [
+    "research-paper",
+    "vision",
+    "deep-learning",
+    "cnn"
+  ],
   "description": "VGGNet demonstrated that network depth is crucial for visual recognition. Using very small 3×3 convolutions throughout, the 16-19 layer networks achieved top performance on ImageNet while being conceptually simpler than previous architectures.",
   "highlights": [
     "16-19 layers (vs. 8 in AlexNet)",

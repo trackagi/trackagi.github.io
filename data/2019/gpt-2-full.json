@@ -2,7 +2,7 @@
   "date": "2019-02-14",
   "title": "GPT-2 Full Model Released",
   "organization": "OpenAI",
-  "level": "high",
+  "level": "major",
   "tags": ["openai", "model-release", "gpt", "llm", "open-source"],
   "description": "OpenAI released the full GPT-2 model with 1.5 billion parameters after a staged release process and partnership with researchers. The model demonstrated impressive text generation capabilities but also raised ongoing discussions about AI safety and dual-use concerns.",
   "highlights": [

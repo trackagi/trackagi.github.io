@@ -2,7 +2,7 @@
   "date": "2022-02-02",
   "title": "Chinchilla: An optimal compute model for language modelling",
   "organization": "Google DeepMind",
-  "level": "high",
+  "level": "major",
   "tags": ["research-paper", "scaling-laws", "efficiency", "deepmind"],
   "description": "DeepMind's Chinchilla paper revealed that current large models are severely undertrained. A 70B parameter model trained on 1.4 trillion tokens outperformed Gopher (280B params) and GPT-3 (175B params). The paper established new scaling laws showing that model size and training data should scale equally for optimal compute efficiency, fundamentally changing how models are trained.",
   "highlights": [

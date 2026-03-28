@@ -2,7 +2,7 @@
   "date": "2025-01-20",
   "title": "DeepSeek-R1 Released",
   "organization": "DeepSeek",
-  "level": "high",
+  "level": "landmark",
   "tags": ["deepseek", "model-release", "open-source", "reasoning", "llm", "arc-agi"],
   "description": "DeepSeek released R1, an open-source reasoning model that matched OpenAI o1 performance on many benchmarks at a fraction of the cost. The model was trained with only $6M in compute using reinforcement learning without supervised fine-tuning, challenging assumptions about AI development costs and strategies. DeepSeek-R1 achieved approximately 15.8% on the ARC-AGI benchmark, demonstrating strong abstract reasoning capabilities for an open-source model.",
   "highlights": [

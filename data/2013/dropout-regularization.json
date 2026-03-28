@@ -2,7 +2,7 @@
   "date": "2013-07-01",
   "title": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
   "organization": "University of Toronto",
-  "level": "high",
+  "level": "major",
   "tags": ["research-paper", "regularization", "deep-learning", "neural-networks"],
   "description": "Geoffrey Hinton and colleagues introduced Dropout, a regularization technique that randomly drops neurons during training. This simple method dramatically reduced overfitting and became a standard technique in deep learning, improving performance across computer vision, NLP, and speech recognition tasks.",
   "highlights": [

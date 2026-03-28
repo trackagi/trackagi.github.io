@@ -2,7 +2,7 @@
   "date": "2019-10-23",
   "title": "T5: Text-to-Text Transfer Transformer",
   "organization": "Google",
-  "level": "high",
+  "level": "major",
   "tags": ["google", "research-paper", "t5", "llm", "transformer", "nlp"],
   "description": "Google introduced T5, treating every NLP task as a text-to-text problem. This unified approach achieved state-of-the-art results across many benchmarks. The paper also introduced the famous C4 (Colossal Clean Crawled Corpus) dataset for pre-training.",
   "highlights": [

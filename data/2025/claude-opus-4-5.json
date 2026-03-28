@@ -2,8 +2,14 @@
   "date": "2025-11-24",
   "title": "Claude Opus 4.5 Released",
   "organization": "Anthropic",
-  "level": "high",
-  "tags": ["anthropic", "model-release", "claude", "llm", "coding"],
+  "level": "major",
+  "tags": [
+    "anthropic",
+    "model-release",
+    "claude",
+    "llm",
+    "coding"
+  ],
   "description": "Anthropic released Claude Opus 4.5, positioning it as a major step forward for coding, agents, and computer use. The release emphasized stronger real-world software engineering performance, better everyday productivity, and wider availability across Anthropic's products and partner platforms.",
   "highlights": [
     "Best-in-class coding and agent performance",

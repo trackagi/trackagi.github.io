@@ -61,8 +61,8 @@
     },
     "level": {
       "type": "string",
-      "enum": ["high", "low"],
-      "description": "Impact level: high = major releases/breakthroughs, low = incremental updates"
+      "enum": ["landmark", "major", "notable", "minor"],
+      "description": "Impact level: landmark = paradigm-shifting, major = significant releases, notable = worth tracking, minor = incremental updates"
     },
     "tags": {
       "type": "array",

@@ -114,7 +114,7 @@ def generate_html(data: dict[str, Any]) -> str:
     """Generate the application shell with embedded data."""
     data_json = json.dumps(data, indent=2, ensure_ascii=False)
     date_range = data["meta"]["date_range"]
-    start_year = date_range["start"][:4] if date_range["start"] else "2013"
+    start_year = date_range["start"][:4] if date_range["start"] else "2010"
     end_year = date_range["end"][:4] if date_range["end"] else "Present"
 
     total_milestones = data["meta"]["total_milestones"]
@@ -274,8 +274,10 @@ def generate_html(data: dict[str, Any]) -> str:
                         <span class="field-label">Signal</span>
                         <select id="level-filter" class="filter-select">
                             <option value="all">All milestones</option>
-                            <option value="high">High signal only</option>
-                            <option value="low">Supporting only</option>
+                            <option value="landmark">Landmark only</option>
+                            <option value="major+">Major and above</option>
+                            <option value="notable+">Notable and above</option>
+                            <option value="minor">Minor only</option>
                         </select>
                     </label>
 

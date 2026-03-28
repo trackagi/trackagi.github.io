@@ -2,7 +2,7 @@
   "date": "2023-09-25",
   "title": "GPT-4 with Vision (GPT-4V)",
   "organization": "OpenAI",
-  "level": "high",
+  "level": "major",
   "tags": ["openai", "model-release", "gpt", "vision", "multimodal"],
   "description": "OpenAI released GPT-4 with vision capabilities, allowing the model to understand and reason about images. It could analyze photographs, charts, diagrams, and documents, marking a major step toward truly multimodal AI systems.",
   "highlights": [

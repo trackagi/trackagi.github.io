@@ -2,8 +2,14 @@
   "date": "2024-09-19",
   "title": "Google NotebookLM with Audio Overviews",
   "organization": "Google",
-  "level": "high",
-  "tags": ["google", "product-launch", "notebooklm", "productivity", "llm"],
+  "level": "major",
+  "tags": [
+    "google",
+    "product-launch",
+    "notebooklm",
+    "productivity",
+    "llm"
+  ],
   "description": "Google launched NotebookLM with Audio Overviews, an AI research assistant that could generate podcast-style audio summaries of documents. The feature created natural-sounding conversations between two AI hosts discussing user-uploaded content, making research consumption more accessible.",
   "highlights": [
     "AI-generated podcast summaries",

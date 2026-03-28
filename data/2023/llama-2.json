@@ -2,7 +2,7 @@
   "date": "2023-07-18",
   "title": "Llama 2 Released",
   "organization": "Meta AI",
-  "level": "high",
+  "level": "major",
   "tags": ["meta-ai", "model-release", "llama", "llm", "open-source"],
   "description": "Meta released Llama 2, an open-source large language model available for free for research and commercial use. Models ranged from 7B to 70B parameters and outperformed most open-source models on benchmarks. This marked a major shift toward open foundation models.",
   "highlights": [

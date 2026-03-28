@@ -1,0 +1,24 @@
+{
+  "date": "2010-06-22",
+  "title": "Rectified Linear Units Improve Restricted Boltzmann Machines",
+  "organization": "University of Toronto",
+  "level": "major",
+  "tags": ["research-paper", "deep-learning", "machine-learning", "neural-networks"],
+  "description": "Vinod Nair and Geoffrey Hinton introduced rectified linear units for restricted Boltzmann machines, showing that ReLU-style activations improve learning speed and feature quality. The paper became one of the key early references behind modern deep learning activation design.",
+  "highlights": [
+    "Early ReLU-based deep learning paper",
+    "Improved training speed and feature quality",
+    "Important precursor to later CNN practice",
+    "Helped normalize rectified activations in deep nets"
+  ],
+  "sources": [
+    {
+      "title": "Rectified Linear Units Improve Restricted Boltzmann Machines",
+      "url": "https://icml.cc/2010/papers/432.pdf"
+    },
+    {
+      "title": "ICML 2010 Program",
+      "url": "https://icml.cc/Conferences/2010/program.html"
+    }
+  ]
+}

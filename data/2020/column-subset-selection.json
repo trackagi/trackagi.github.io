@@ -2,8 +2,13 @@
   "date": "2020-02-24",
   "title": "Improved Guarantees and a Multiple-Descent Curve for Column Subset Selection and the Nyström Method",
   "organization": "Google",
-  "level": "low",
-  "tags": ["research-paper", "optimization", "machine-learning", "low-rank"],
+  "level": "notable",
+  "tags": [
+    "research-paper",
+    "optimization",
+    "machine-learning",
+    "low-rank"
+  ],
   "description": "Research on column subset selection and the Nyström method with improved theoretical guarantees. While technical, this work improved understanding of low-rank approximation methods commonly used in scalable machine learning algorithms.",
   "highlights": [
     "Improved theoretical bounds",

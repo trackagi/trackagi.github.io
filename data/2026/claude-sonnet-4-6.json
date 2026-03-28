@@ -2,8 +2,15 @@
   "date": "2026-02-17",
   "title": "Claude Sonnet 4.6 Released",
   "organization": "Anthropic",
-  "level": "high",
-  "tags": ["anthropic", "model-release", "claude", "llm", "reasoning", "coding"],
+  "level": "major",
+  "tags": [
+    "anthropic",
+    "model-release",
+    "claude",
+    "llm",
+    "reasoning",
+    "coding"
+  ],
   "description": "Anthropic released Claude Sonnet 4.6, a full upgrade across coding, computer use, long-context reasoning, agent planning, knowledge work, and design. The model features a 1M token context window in beta and approaches Opus-level intelligence at a lower price point. Users preferred Sonnet 4.6 over Sonnet 4.5 roughly 70% of the time in Claude Code testing, and even preferred it to Opus 4.5 59% of the time due to less overengineering and better instruction following.",
   "highlights": [
     "Approaches Opus-level intelligence",

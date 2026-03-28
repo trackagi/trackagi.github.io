@@ -2,8 +2,15 @@
   "date": "2024-02-15",
   "title": "Google Gemini 1.5 Pro",
   "organization": "Google",
-  "level": "high",
-  "tags": ["google", "model-release", "gemini", "llm", "long-context", "multimodal"],
+  "level": "major",
+  "tags": [
+    "google",
+    "model-release",
+    "gemini",
+    "llm",
+    "long-context",
+    "multimodal"
+  ],
   "description": "Google released Gemini 1.5 Pro with an unprecedented 1 million token context window (later expanded to 2M). It featured Mixture-of-Experts architecture and dramatically improved performance across benchmarks, including 'needle in a haystack' retrieval at 99% accuracy over 1M tokens.",
   "highlights": [
     "1 million token context window (2M later)",

@@ -2,7 +2,7 @@
   "date": "2023-12-11",
   "title": "Mixtral 8x7B Released",
   "organization": "Mistral AI",
-  "level": "high",
+  "level": "major",
   "tags": ["mistral", "model-release", "open-source", "mixture-of-experts", "mixtral"],
   "description": "Mistral AI released Mixtral 8x7B, a sparse Mixture of Experts (MoE) model that outperformed GPT-3.5 and Llama 2 70B on most benchmarks. With only 12.9B active parameters per token from 46.7B total, it delivered exceptional efficiency. The model matched or exceeded GPT-3.5 Turbo on standard benchmarks while being faster and cheaper to run.",
   "highlights": [

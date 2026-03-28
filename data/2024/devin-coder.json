@@ -2,8 +2,14 @@
   "date": "2024-03-12",
   "title": "Devin: AI Software Engineer",
   "organization": "Cognition Labs",
-  "level": "high",
-  "tags": ["cognition", "product-launch", "devin", "coding", "agent"],
+  "level": "major",
+  "tags": [
+    "cognition",
+    "product-launch",
+    "devin",
+    "coding",
+    "agent"
+  ],
   "description": "Cognition Labs introduced Devin, billed as the first fully autonomous AI software engineer. Devin can plan and execute complex engineering tasks, learning from its mistakes and working on projects end-to-end including coding, debugging, and deployment.",
   "highlights": [
     "First autonomous AI software engineer",

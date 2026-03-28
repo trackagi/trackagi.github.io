@@ -2,7 +2,7 @@
   "date": "2024-06-20",
   "title": "Claude 3.5 Sonnet Released",
   "organization": "Anthropic",
-  "level": "high",
+  "level": "major",
   "tags": ["anthropic", "model-release", "claude", "llm", "coding"],
   "description": "Anthropic released Claude 3.5 Sonnet, which outperformed Claude 3 Opus on many benchmarks while being faster and cheaper. It achieved 92% on HumanEval coding benchmark and demonstrated significant improvements in reasoning, coding, and following complex instructions.",
   "highlights": [
