@@ -49,7 +49,8 @@
     filtersPanel: document.getElementById('filters-panel'),
     filtersToggle: document.getElementById('filters-toggle'),
     resultsSummary: document.getElementById('results-summary'),
-    clearFilters: document.getElementById('clear-filters')
+    clearFilters: document.getElementById('clear-filters'),
+    quickFilters: document.getElementById('quick-filters')
   };
 
   function init() {
@@ -90,6 +91,7 @@
     if (el.levelFilter) {
       el.levelFilter.addEventListener('change', function (e) {
         state.filters.level = e.target.value;
+        syncQuickFilters();
         render();
       });
     }
@@ -117,6 +119,17 @@
 
     if (el.clearFilters) {
       el.clearFilters.addEventListener('click', clearFilters);
+    }
+
+    if (el.quickFilters) {
+      el.quickFilters.addEventListener('click', function (e) {
+        var chip = e.target.closest('[data-level]');
+        if (!chip) return;
+        state.filters.level = chip.dataset.level;
+        if (el.levelFilter) el.levelFilter.value = state.filters.level;
+        syncQuickFilters();
+        render();
+      });
     }
 
     if (el.timeline) {
@@ -189,6 +202,13 @@
 
     // Fallback: full re-render if card not found
     render();
+  }
+
+  function syncQuickFilters() {
+    if (!el.quickFilters) return;
+    el.quickFilters.querySelectorAll('[data-level]').forEach(function (chip) {
+      chip.classList.toggle('is-active', chip.dataset.level === state.filters.level);
+    });
   }
 
   function clearFilters() {
@@ -362,6 +382,7 @@
     var filtered = getFiltered();
     updateSummary(filtered.length);
     updateTagButtons();
+    syncQuickFilters();
     if (!el.timeline) return;
 
     if (!filtered.length) {

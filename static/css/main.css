@@ -93,6 +93,50 @@ a:hover {
   color: var(--text-soft);
 }
 
+.page-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.hero-star {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid var(--text);
+  border-radius: 999px;
+  background: var(--text);
+  color: var(--bg);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  box-shadow: 0 8px 18px rgba(17, 24, 39, 0.12);
+  transition: transform 150ms ease, background-color 150ms ease, border-color 150ms ease, color 150ms ease;
+}
+
+.hero-star:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+  background: var(--text-soft);
+  border-color: var(--text-soft);
+  color: var(--bg);
+}
+
+.hero-star-secondary {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--text);
+  box-shadow: none;
+}
+
+.hero-star-secondary:hover {
+  background: var(--surface-muted);
+  border-color: var(--border);
+  color: var(--text);
+}
+
 .page-kicker {
   display: none;
 }
@@ -210,6 +254,48 @@ a:hover {
 .filters-toggle:focus {
   outline: none;
   border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--focus);
+}
+
+/* ── Quick Filters ── */
+
+.quick-filters {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.quick-chip {
+  padding: 5px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 150ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.quick-chip:hover {
+  border-color: var(--text-soft);
+  color: var(--text-soft);
+}
+
+.quick-chip.is-active {
+  background: var(--text);
+  border-color: var(--text);
+  color: var(--bg);
+}
+
+.quick-chip.is-active:hover {
+  background: var(--text-soft);
+  border-color: var(--text-soft);
+}
+
+.quick-chip:focus {
+  outline: none;
   box-shadow: 0 0 0 3px var(--focus);
 }
 
@@ -521,6 +607,12 @@ a:hover {
   font-size: 13px;
   font-weight: 400;
   white-space: nowrap;
+  text-decoration: none;
+}
+
+.milestone-org:hover {
+  color: var(--text);
+  text-decoration: underline;
 }
 
 .milestone-organization {
@@ -671,16 +763,110 @@ a:hover {
   text-decoration: none;
 }
 
-.footer-star {
-  background: var(--text);
-  border-color: var(--text) !important;
-  color: var(--bg) !important;
+/* ── Organization Pages ── */
+
+.org-index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 24px;
 }
 
-.footer-star:hover {
-  background: var(--text-soft) !important;
-  border-color: var(--text-soft) !important;
-  color: var(--bg) !important;
+.org-card {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.04);
+  transition: transform 150ms ease, border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.org-card:hover {
+  transform: translateY(-1px);
+  border-color: rgba(37, 99, 235, 0.25);
+  box-shadow: 0 14px 26px rgba(17, 24, 39, 0.07);
+  text-decoration: none;
+}
+
+.org-card h2 {
+  margin: 0;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.org-card p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 14px;
+}
+
+.org-card-kicker {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.org-milestone-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.org-milestone {
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: 0 10px 22px rgba(17, 24, 39, 0.04);
+}
+
+.org-milestone-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.org-milestone-kicker {
+  margin: 0 0 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.org-milestone-title {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.org-milestone-date {
+  flex-shrink: 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.org-milestone-summary {
+  margin: 12px 0 0;
+  color: var(--text-soft);
+}
+
+.org-highlights {
+  margin: 14px 0 0;
+  padding-left: 20px;
+  color: var(--text);
+}
+
+.org-tags {
+  margin-top: 14px;
 }
 
 /* ── Empty State ── */
@@ -804,6 +990,23 @@ a:hover {
 
   .page-header {
     padding-bottom: 14px;
+  }
+
+  .quick-filters {
+    gap: 4px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .quick-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .quick-chip {
+    font-size: 12px;
+    padding: 4px 10px;
+    flex-shrink: 0;
   }
 
   .page-copy h1 {

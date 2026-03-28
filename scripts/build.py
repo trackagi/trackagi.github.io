@@ -7,6 +7,7 @@ Aggregates all JSON data files and generates the static site.
 import json
 import shutil
 from datetime import datetime
+from html import escape
 from pathlib import Path
 from typing import Any
 
@@ -20,6 +21,41 @@ def resolve_repo_path(path: str | Path) -> Path:
     """Resolve relative project paths from the repository root."""
     raw_path = Path(path)
     return raw_path if raw_path.is_absolute() else REPO_ROOT / raw_path
+
+
+def slugify_organization(name: str) -> str:
+    """Create a stable URL slug for organization pages."""
+    slug = name.lower()
+    slug = slug.replace("google deepmind", "google-deepmind")
+    slug = slug.replace("meta ai", "meta-ai")
+    slug = slug.replace("stability ai", "stability-ai")
+    slug = slug.replace("mistral ai", "mistral-ai")
+    slug = slug.replace("moonshot ai", "moonshot-ai")
+    slug = slug.replace("allen institute for ai", "allen-institute-for-ai")
+    slug = slug.replace("cognition labs", "cognition-labs")
+    slug = slug.replace("university of toronto", "university-of-toronto")
+    slug = slug.replace("university of montreal", "university-of-montreal")
+    slug = slug.replace("university of oxford", "university-of-oxford")
+    slug = slug.replace("carnegie mellon", "carnegie-mellon")
+    slug = slug.replace("salesforce", "salesforce")
+    slug = slug.replace("black forest labs", "black-forest-labs")
+    slug = slug.replace("midjourney", "midjourney")
+    slug = slug.replace(" ", "-")
+    return "".join(ch for ch in slug if ch.isalnum() or ch == "-").strip("-")
+
+
+def organization_page_url(organization: str) -> str:
+    """Return the relative URL used to link to an organization page."""
+    return f"organizations/{slugify_organization(organization)}/index.html"
+
+
+def relative_path_to_root(depth: int) -> str:
+    """Return a relative prefix that points from a nested page back to repo root content."""
+    return "../" * depth
+
+
+def format_org_milestone_count(count: int) -> str:
+    return f"{count} milestone{'s' if count != 1 else ''}"
 
 
 def load_milestones(data_dir: str | Path = "data") -> list[dict[str, Any]]:
@@ -217,6 +253,14 @@ def generate_html(data: dict[str, Any]) -> str:
                         A minimal, information-dense timeline of notable model launches, research
                         papers, and products shaping modern AI.
                     </p>
+                    <div class="page-actions">
+                        <a href="https://github.com/trackagi/trackagi.github.io" target="_blank" rel="noreferrer" class="hero-star">
+                            Star on GitHub
+                        </a>
+                        <a href="organizations/index.html" class="hero-star hero-star-secondary">
+                            Browse organizations
+                        </a>
+                    </div>
                 </div>
 
                 <ul class="page-meta" aria-label="Project overview">
@@ -257,6 +301,13 @@ def generate_html(data: dict[str, Any]) -> str:
                 >
                     Filters
                 </button>
+            </div>
+
+            <div class="quick-filters" id="quick-filters" aria-label="Filter by level">
+                <button type="button" class="quick-chip is-active" data-level="all">All</button>
+                <button type="button" class="quick-chip" data-level="landmark">Landmark</button>
+                <button type="button" class="quick-chip" data-level="major+">Major+</button>
+                <button type="button" class="quick-chip" data-level="notable+">Notable+</button>
             </div>
 
             <section class="filters-panel" id="filters-panel" aria-label="Feed filters">
@@ -310,7 +361,6 @@ def generate_html(data: dict[str, Any]) -> str:
         <footer class="site-footer">
             <span class="footer-credit">Made by <a href="https://dipkumar.dev" target="_blank" rel="noreferrer">dipkumar.dev</a></span>
             <nav class="footer-links" aria-label="Contribute">
-                <a href="https://github.com/trackagi/trackagi.github.io" target="_blank" rel="noreferrer" class="footer-star">Star on GitHub</a>
                 <a href="https://github.com/trackagi/trackagi.github.io/issues/new?template=milestone-request.yml" target="_blank" rel="noreferrer">Suggest milestone</a>
                 <a href="https://github.com/trackagi/trackagi.github.io/issues/new?template=bug-report.yml" target="_blank" rel="noreferrer">Report bug</a>
                 <a href="https://github.com/trackagi/trackagi.github.io" target="_blank" rel="noreferrer">Contribute</a>
@@ -324,6 +374,173 @@ def generate_html(data: dict[str, Any]) -> str:
     <script src="js/app.js"></script>
 </body>
 </html>"""
+
+
+def render_org_page_milestone(milestone: dict[str, Any]) -> str:
+    """Render a single milestone for organization landing pages."""
+    tags = "".join(
+        f'<span class="milestone-tag">{escape(tag)}</span>' for tag in milestone.get("tags", [])
+    )
+    highlights = "".join(
+        f"<li>{escape(item)}</li>" for item in milestone.get("highlights", [])
+    )
+    sources = "".join(
+        f'<li><a href="{escape(source.get("url", "#"), quote=True)}" target="_blank" rel="noreferrer">'
+        f'{escape(source.get("title", "Source"))}</a></li>'
+        for source in milestone.get("sources", [])
+        if isinstance(source, dict)
+    )
+
+    return f"""
+      <article class="org-milestone">
+        <div class="org-milestone-header">
+          <div>
+            <p class="org-milestone-kicker">{escape(milestone["level"].title())}</p>
+            <h2 class="org-milestone-title">{escape(milestone["title"])}</h2>
+          </div>
+          <time class="org-milestone-date" datetime="{escape(milestone["date"], quote=True)}">
+            {escape(milestone["date"])}
+          </time>
+        </div>
+        <p class="org-milestone-summary">{escape(milestone["description"])}</p>
+        {f'<ul class="org-highlights">{highlights}</ul>' if highlights else ''}
+        {f'<div class="milestone-tags org-tags">{tags}</div>' if tags else ''}
+        {f'<section class="detail-block"><h3>Sources</h3><ul class="source-list">{sources}</ul></section>' if sources else ''}
+      </article>
+    """
+
+
+def generate_organization_index_html(
+    data: dict[str, Any],
+    indexes: dict[str, Any],
+    org_counts: dict[str, int],
+    dist_dir: str | Path = "dist",
+) -> None:
+    """Generate an organizations index page for SEO and discovery."""
+    dist_path = resolve_repo_path(dist_dir)
+    total_orgs = len(indexes["organizations"])
+    total_milestones = data["meta"]["total_milestones"]
+    start_year = data["meta"]["date_range"]["start"][:4] if data["meta"]["date_range"]["start"] else "2010"
+    end_year = data["meta"]["date_range"]["end"][:4] if data["meta"]["date_range"]["end"] else "Present"
+    org_cards = []
+    for org in indexes["organizations"]:
+        count = org_counts.get(org, 0)
+        org_cards.append(
+            f"""
+              <a class="org-card" href="{organization_page_url(org)}">
+                <span class="org-card-kicker">Company page</span>
+                <h2>{escape(org)}</h2>
+                <p>{count} milestone{'s' if count != 1 else ''} tracked from {start_year} to {end_year}.</p>
+              </a>
+            """
+        )
+
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizations | AGI Progress Tracker</title>
+    <meta name="description" content="Browse {total_orgs} organizations tracked across {total_milestones} AI milestones.">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="page-shell org-index-shell">
+        <header class="org-page-header">
+            <p class="page-kicker">Organizations</p>
+            <div class="page-heading">
+                <div class="page-copy">
+                    <h1>Organization pages</h1>
+                    <p class="page-description">Browse the timeline by company and jump into each organization’s history.</p>
+                    <div class="page-actions">
+                        <a href="../index.html" class="hero-star">Back to timeline</a>
+                    </div>
+                </div>
+                <ul class="page-meta" aria-label="Organizations overview">
+                    <li><span class="meta-value">{total_orgs}</span><span class="meta-label">organizations</span></li>
+                    <li><span class="meta-value">{total_milestones}</span><span class="meta-label">milestones</span></li>
+                </ul>
+            </div>
+        </header>
+        <main class="org-index-grid">
+            {''.join(org_cards)}
+        </main>
+    </div>
+</body>
+</html>"""
+
+    org_index_dir = dist_path / "organizations"
+    org_index_dir.mkdir(parents=True, exist_ok=True)
+    with (org_index_dir / "index.html").open("w", encoding="utf-8") as handle:
+        handle.write(html)
+    print(f"Generated {org_index_dir / 'index.html'}")
+
+
+def generate_organization_pages(
+    milestones: list[dict[str, Any]],
+    indexes: dict[str, Any],
+    dist_dir: str | Path = "dist",
+) -> None:
+    """Generate one SEO landing page per organization."""
+    dist_path = resolve_repo_path(dist_dir)
+    org_dir = dist_path / "organizations"
+    org_dir.mkdir(parents=True, exist_ok=True)
+
+    milestones_by_org: dict[str, list[dict[str, Any]]] = {}
+    for milestone in milestones:
+        milestones_by_org.setdefault(milestone["organization"], []).append(milestone)
+
+    for organization in indexes["organizations"]:
+        org_milestones = sorted(
+            milestones_by_org.get(organization, []),
+            key=lambda item: item["date"],
+            reverse=True,
+        )
+        count = len(org_milestones)
+        date_start = org_milestones[-1]["date"] if org_milestones else None
+        date_end = org_milestones[0]["date"] if org_milestones else None
+        page_dir = org_dir / slugify_organization(organization)
+        page_dir.mkdir(parents=True, exist_ok=True)
+
+        milestone_html = "\n".join(render_org_page_milestone(m) for m in org_milestones)
+        html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{escape(organization)} | AGI Progress Tracker</title>
+    <meta name="description" content="Track {count} AI milestones from {escape(organization)} between {date_start or '2010'} and {date_end or 'Present'}.">
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+    <div class="page-shell org-page-shell">
+        <header class="org-page-header">
+            <p class="page-kicker">Organization page</p>
+            <div class="page-heading">
+                <div class="page-copy">
+                    <h1>{escape(organization)}</h1>
+                    <p class="page-description">A company-specific timeline showing the most important milestones for {escape(organization)}.</p>
+                    <div class="page-actions">
+                        <a href="../../index.html" class="hero-star">Back to timeline</a>
+                        <a href="../index.html" class="hero-star hero-star-secondary">All organizations</a>
+                    </div>
+                </div>
+                <ul class="page-meta" aria-label="Company overview">
+                    <li><span class="meta-value">{count}</span><span class="meta-label">milestones</span></li>
+                    <li><span class="meta-value">{date_start or '2010'}-{date_end or 'Present'}</span><span class="meta-label">range</span></li>
+                </ul>
+            </div>
+        </header>
+        <main class="org-milestone-list">
+            {milestone_html}
+        </main>
+    </div>
+</body>
+</html>"""
+
+        with (page_dir / "index.html").open("w", encoding="utf-8") as handle:
+            handle.write(html)
+        print(f"Generated {page_dir / 'index.html'}")
 
 
 def generate_robots_txt(dist_dir: str | Path = "dist") -> None:
@@ -346,7 +563,11 @@ Crawl-delay: 1
     print(f"Generated {dist_path / 'robots.txt'}")
 
 
-def generate_sitemap_xml(milestones: list[dict[str, Any]], dist_dir: str | Path = "dist") -> None:
+def generate_sitemap_xml(
+    milestones: list[dict[str, Any]],
+    indexes: dict[str, Any],
+    dist_dir: str | Path = "dist",
+) -> None:
     """Generate sitemap.xml for SEO."""
     dist_path = resolve_repo_path(dist_dir)
     canonical_url = "https://trackagi.github.io"
@@ -375,6 +596,21 @@ def generate_sitemap_xml(milestones: list[dict[str, Any]], dist_dir: str | Path 
     <lastmod>{today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>""")
+
+    urls.append(f"""  <url>
+    <loc>{canonical_url}/organizations/</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>""")
+
+    for organization in indexes["organizations"]:
+        urls.append(f"""  <url>
+    <loc>{canonical_url}/{organization_page_url(organization).replace('index.html', '')}</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>""")
 
     content = f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -482,9 +718,14 @@ def build(dist_dir: str | Path = "dist", data_dir: str | Path = "data") -> bool:
     copy_static_files(dist_dir)
     print("Copied static files\n")
 
+    print("Generating organization pages...")
+    generate_organization_index_html(data, indexes, org_counts={org: len(indexes["by_organization"].get(org, [])) for org in indexes["organizations"]}, dist_dir=dist_dir)
+    generate_organization_pages(milestones, indexes, dist_dir=dist_dir)
+    print("Generated organization pages\n")
+
     print("Generating SEO files...")
     generate_robots_txt(dist_dir)
-    generate_sitemap_xml(milestones, dist_dir)
+    generate_sitemap_xml(milestones, indexes, dist_dir)
     generate_404_html(dist_dir)
     print("Generated SEO files\n")
 
