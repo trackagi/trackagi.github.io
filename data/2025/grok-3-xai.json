@@ -3,7 +3,7 @@
   "title": "Grok 3 Beta: Advancing Reasoning and Capabilities",
   "organization": "xAI",
   "level": "high",
-  "tags": ["research-paper", "grok", "reasoning", "xai"],
+  "tags": ["model-release", "grok", "reasoning", "xai"],
   "description": "xAI released Grok 3, their most capable model with significantly improved reasoning, coding, and mathematical abilities. The model demonstrated strong performance on benchmarks and introduced new reasoning modes. Trained on xAI's Colossus supercomputer with substantial compute, Grok 3 represents xAI's continued push toward more capable and truth-seeking AI systems.",
   "highlights": [
     "Advanced reasoning capabilities",

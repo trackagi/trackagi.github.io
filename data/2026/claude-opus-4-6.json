@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-05",
+  "title": "Claude Opus 4.6 Released",
+  "organization": "Anthropic",
+  "level": "high",
+  "tags": ["anthropic", "model-release", "claude", "llm", "reasoning", "agent"],
+  "description": "Anthropic released Claude Opus 4.6, their most intelligent model with industry-leading performance on agentic coding, computer use, tool use, search, and finance. The model achieved state-of-the-art scores on Terminal-Bench 2.0 and Humanity's Last Exam, featuring improved coding skills, better code review and debugging, and a 1M token context window in beta. It outperformed GPT-5.2 by 144 Elo points on GDPval-AA economically valuable knowledge work tasks.",
+  "highlights": [
+    "State-of-the-art on Terminal-Bench 2.0",
+    "Highest score on Humanity's Last Exam",
+    "1M token context window (beta)",
+    "Improved agentic coding and computer use",
+    "Outperforms GPT-5.2 on knowledge work tasks"
+  ],
+  "sources": [
+    {
+      "title": "Introducing Claude Opus 4.6",
+      "url": "https://www.anthropic.com/news/claude-opus-4-6"
+    }
+  ]
+}

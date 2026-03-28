@@ -1,0 +1,21 @@
+{
+  "date": "2026-03-17",
+  "title": "GPT-5.4 mini and nano Released",
+  "organization": "OpenAI",
+  "level": "high",
+  "tags": ["openai", "model-release", "gpt", "llm", "efficiency"],
+  "description": "OpenAI released GPT-5.4 mini and nano, their most capable small models yet optimized for coding and subagents. GPT-5.4 mini significantly improves over GPT-5 mini across coding, reasoning, multimodal understanding, and tool use while running more than 2x faster. GPT-5.4 nano is the smallest, cheapest version for tasks where speed and cost matter most. These models are designed for high-volume workloads where latency directly shapes product experience.",
+  "highlights": [
+    "GPT-5.4 mini: 2x faster than GPT-5 mini",
+    "54.4% on SWE-Bench Pro (mini)",
+    "400K context window (mini)",
+    "GPT-5.4 nano: $0.20 per 1M input tokens",
+    "Optimized for subagents and coding workflows"
+  ],
+  "sources": [
+    {
+      "title": "Introducing GPT-5.4 mini and nano",
+      "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/"
+    }
+  ]
+}
