@@ -31,6 +31,30 @@
     'xAI': '#6d28d9'
   };
 
+  function slugifyOrganization(name) {
+    return String(name || '')
+      .toLowerCase()
+      .replace(/google deepmind/g, 'google-deepmind')
+      .replace(/meta ai/g, 'meta-ai')
+      .replace(/stability ai/g, 'stability-ai')
+      .replace(/mistral ai/g, 'mistral-ai')
+      .replace(/moonshot ai/g, 'moonshot-ai')
+      .replace(/allen institute for ai/g, 'allen-institute-for-ai')
+      .replace(/cognition labs/g, 'cognition-labs')
+      .replace(/university of toronto/g, 'university-of-toronto')
+      .replace(/university of montreal/g, 'university-of-montreal')
+      .replace(/university of oxford/g, 'university-of-oxford')
+      .replace(/carnegie mellon/g, 'carnegie-mellon')
+      .replace(/black forest labs/g, 'black-forest-labs')
+      .replace(/ /g, '-')
+      .replace(/[^a-z0-9-]/g, '')
+      .replace(/^-+|-+$/g, '');
+  }
+
+  function organizationPageUrl(name) {
+    return 'organizations/' + slugifyOrganization(name) + '/index.html';
+  }
+
   var state = {
     data: window.AGI_DATA || { milestones: [], meta: {}, indexes: {} },
     filters: { timeView: 'year', level: 'all', organization: 'all', search: '', tags: new Set() },
@@ -305,6 +329,7 @@
     var id = milestoneId(m);
     var expanded = state.expanded.has(id);
     var year = m.date.split('-')[0];
+    var orgUrl = organizationPageUrl(m.organization);
 
     return '<article class="milestone-card' + (expanded ? ' is-expanded' : '') + '" data-id="' + escAttr(id) + '" style="--dot-color:' + orgColor(m.organization) + '">' +
       '<div class="milestone-shell">' +
@@ -318,7 +343,7 @@
           '<div class="milestone-header">' +
             '<div class="milestone-title-row">' +
               '<h2 class="milestone-title">' + esc(m.title) + '</h2>' +
-              '<span class="milestone-org">' + esc(m.organization) + '</span>' +
+              '<a class="milestone-org" href="' + escAttr(orgUrl) + '">' + esc(m.organization) + '</a>' +
             '</div>' +
           '</div>' +
           '<div class="milestone-details">' +

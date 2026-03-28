@@ -49,9 +49,9 @@ def organization_page_url(organization: str) -> str:
     return f"organizations/{slugify_organization(organization)}/index.html"
 
 
-def relative_path_to_root(depth: int) -> str:
-    """Return a relative prefix that points from a nested page back to repo root content."""
-    return "../" * depth
+def organization_index_page_url(organization: str) -> str:
+    """Return the relative URL used from the organization index page."""
+    return f"{slugify_organization(organization)}/index.html"
 
 
 def format_org_milestone_count(count: int) -> str:
@@ -381,9 +381,7 @@ def render_org_page_milestone(milestone: dict[str, Any]) -> str:
     tags = "".join(
         f'<span class="milestone-tag">{escape(tag)}</span>' for tag in milestone.get("tags", [])
     )
-    highlights = "".join(
-        f"<li>{escape(item)}</li>" for item in milestone.get("highlights", [])
-    )
+    highlights = "".join(f"<li>{escape(item)}</li>" for item in milestone.get("highlights", []))
     sources = "".join(
         f'<li><a href="{escape(source.get("url", "#"), quote=True)}" target="_blank" rel="noreferrer">'
         f'{escape(source.get("title", "Source"))}</a></li>'
@@ -420,20 +418,22 @@ def generate_organization_index_html(
     dist_path = resolve_repo_path(dist_dir)
     total_orgs = len(indexes["organizations"])
     total_milestones = data["meta"]["total_milestones"]
-    start_year = data["meta"]["date_range"]["start"][:4] if data["meta"]["date_range"]["start"] else "2010"
-    end_year = data["meta"]["date_range"]["end"][:4] if data["meta"]["date_range"]["end"] else "Present"
+    start_year = (
+        data["meta"]["date_range"]["start"][:4] if data["meta"]["date_range"]["start"] else "2010"
+    )
+    end_year = (
+        data["meta"]["date_range"]["end"][:4] if data["meta"]["date_range"]["end"] else "Present"
+    )
     org_cards = []
     for org in indexes["organizations"]:
         count = org_counts.get(org, 0)
-        org_cards.append(
-            f"""
-              <a class="org-card" href="{organization_page_url(org)}">
+        org_cards.append(f"""
+              <a class="org-card" href="{organization_index_page_url(org)}">
                 <span class="org-card-kicker">Company page</span>
                 <h2>{escape(org)}</h2>
                 <p>{count} milestone{'s' if count != 1 else ''} tracked from {start_year} to {end_year}.</p>
               </a>
-            """
-        )
+            """)
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -575,14 +575,12 @@ def generate_sitemap_xml(
     today = datetime.now().strftime("%Y-%m-%d")
 
     # Build sitemap entries
-    urls = [
-        f"""  <url>
+    urls = [f"""  <url>
     <loc>{canonical_url}/</loc>
     <lastmod>{today}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-  </url>"""
-    ]
+  </url>"""]
 
     # Add entries for each year with milestones
     years = set()
@@ -719,7 +717,14 @@ def build(dist_dir: str | Path = "dist", data_dir: str | Path = "data") -> bool:
     print("Copied static files\n")
 
     print("Generating organization pages...")
-    generate_organization_index_html(data, indexes, org_counts={org: len(indexes["by_organization"].get(org, [])) for org in indexes["organizations"]}, dist_dir=dist_dir)
+    generate_organization_index_html(
+        data,
+        indexes,
+        org_counts={
+            org: len(indexes["by_organization"].get(org, [])) for org in indexes["organizations"]
+        },
+        dist_dir=dist_dir,
+    )
     generate_organization_pages(milestones, indexes, dist_dir=dist_dir)
     print("Generated organization pages\n")
 
