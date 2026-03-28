@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-AGI Progress Tracker — a static site timeline of AI milestones (2013–present). Hand-maintained JSON data files are validated, aggregated, and built into a static site deployed on GitHub Pages.
+AGI Progress Tracker — a static site timeline of AI milestones (2010–present). Hand-maintained JSON data files are validated, aggregated, and built into a static site deployed on GitHub Pages.
 
 **Tech**: Python 3.11+ (zero external deps), vanilla JS + CSS, UV package manager, GitHub Actions CI/CD.
 
@@ -57,7 +57,7 @@ Data flow: `window.AGI_DATA` (embedded by build.py) → JS filters client-side �
 
 ### Styling (`static/css/main.css`, 825 lines)
 
-CSS variables for colors/spacing. Organization-specific gradient colors. Dark theme (#0f0f0f). Responsive breakpoints at 768px and 480px. Animations: scroll progress, fade-in, parallax, ripple.
+Clean white/gray palette (#fafafa). Organization-colored timeline dots. Responsive breakpoints at 768px and 480px. Minimal animations: fade-in on scroll, smooth expand/collapse.
 
 ## Data Schema
 
@@ -73,7 +73,7 @@ Optional: `highlights` (array of strings).
 - **Never edit `dist/`** — it's generated and git-ignored
 - Edit source in `data/`, `static/`, `scripts/` — then rebuild
 - Validate before building: `./run.sh validate`
-- `level: "high"` = major releases/breakthroughs; `"low"` = incremental updates
+- `level` uses a 4-tier system: `landmark` (paradigm shifts), `major` (significant releases), `notable` (worth tracking), `minor` (incremental updates)
 - Unknown organization = validation failure; unknown tag = warning only
 
 ## CI/CD (`.github/workflows/deploy.yml`)

@@ -39,7 +39,11 @@ When adding or editing milestones:
 - Optional field:
   - `highlights`
 - Dates must use `YYYY-MM-DD`.
-- `level` must be `high` or `low`.
+- `level` must be one of: `landmark`, `major`, `notable`, `minor`.
+  - **landmark**: Paradigm-shifting events (~1-3/year). Transformer paper, ChatGPT, GPT-4, AlphaFold.
+  - **major**: Significant releases and events. Most model releases, important products.
+  - **notable**: Worth tracking but not groundbreaking. Minor model variants, ecosystem events.
+  - **minor**: Incremental updates, pricing changes, benchmark scores, API tweaks.
 - Keep descriptions factual and specific. Every entry needs at least one source object with `title` and `url`.
 
 ## Tag And Organization Maintenance

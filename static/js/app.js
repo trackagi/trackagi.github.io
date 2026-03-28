@@ -170,7 +170,24 @@
   }
 
   function toggleExpanded(id) {
-    state.expanded.has(id) ? state.expanded.delete(id) : state.expanded.add(id);
+    var isExpanding = !state.expanded.has(id);
+    if (isExpanding) {
+      state.expanded.add(id);
+    } else {
+      state.expanded.delete(id);
+    }
+
+    // Toggle class on existing DOM element instead of full re-render
+    // so the CSS transition actually plays
+    if (el.timeline) {
+      var card = el.timeline.querySelector('[data-id="' + CSS.escape(id) + '"]');
+      if (card) {
+        card.classList.toggle('is-expanded', isExpanding);
+        return;
+      }
+    }
+
+    // Fallback: full re-render if card not found
     render();
   }
 
