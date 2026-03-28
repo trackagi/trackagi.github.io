@@ -244,7 +244,7 @@ def generate_html(data: dict[str, Any]) -> str:
                         type="search"
                         id="search"
                         class="search-input"
-                        placeholder="Search titles, organizations, tags, or topics"
+                        placeholder="Search milestones..."
                     >
                 </label>
 

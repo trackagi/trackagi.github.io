@@ -420,10 +420,21 @@ a:hover {
   cursor: pointer;
   border-radius: var(--radius-sm);
   transition: background-color 120ms ease;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .milestone-shell:hover {
   background: rgba(0, 0, 0, 0.015);
+}
+
+.milestone-shell:active {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+@media (hover: none) {
+  .milestone-shell:hover {
+    background: transparent;
+  }
 }
 
 .js-enabled .milestone-card {
@@ -678,7 +689,7 @@ a:hover {
 @media (max-width: 768px) {
   .page-shell {
     width: min(100vw - 24px, 880px);
-    padding-top: 24px;
+    padding-top: 20px;
   }
 
   .page-heading {
@@ -687,17 +698,32 @@ a:hover {
     gap: 12px;
   }
 
-  .controls-shell {
-    position: static;
+  .page-description {
+    font-size: 13px;
   }
 
+  /* Keep controls sticky on mobile — search always accessible */
+  .controls-shell {
+    margin-top: 12px;
+    padding: 10px 0 12px;
+  }
+
+  /* Search + filter button stay side by side */
   .controls-bar {
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .search-input {
+    height: 38px;
+    font-size: 14px;
   }
 
   .filters-toggle {
-    align-self: flex-start;
+    height: 38px;
+    padding: 0 12px;
+    font-size: 12px;
+    flex-shrink: 0;
   }
 
   .filter-grid {
@@ -705,13 +731,36 @@ a:hover {
   }
 
   .results-bar {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .results-summary {
+    font-size: 12px;
   }
 
   .section-header {
-    flex-direction: column;
-    gap: 4px;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .section-header h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Tighter timeline on tablet */
+  .section-stack::before {
+    left: 64px;
+  }
+
+  .milestone-shell {
+    grid-template-columns: 60px minmax(0, 1fr);
+    gap: 16px;
+    padding: 12px 0;
+  }
+
+  .milestone-title {
+    font-size: 0.9rem;
   }
 
   .site-footer {
@@ -726,38 +775,120 @@ a:hover {
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 480px) {
   .page-shell {
     width: min(100vw - 16px, 880px);
     padding-top: 16px;
   }
 
+  .page-header {
+    padding-bottom: 14px;
+  }
+
   .page-copy h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+  }
+
+  .page-description {
+    display: none;
   }
 
   .page-meta {
-    gap: 14px;
+    gap: 12px;
   }
 
+  .meta-value {
+    font-size: 1.1rem;
+  }
+
+  .meta-label {
+    font-size: 9px;
+  }
+
+  /* Hide timeline line on small phones */
   .section-stack::before {
     display: none;
   }
 
+  /* Single column layout — date inline with title */
   .milestone-shell {
     grid-template-columns: 1fr;
-    gap: 4px;
-    padding: 10px 0;
+    gap: 2px;
+    padding: 12px 4px;
+  }
+
+  .milestone-rail {
+    padding-top: 0;
   }
 
   .milestone-rail::after {
     display: none;
   }
 
+  /* Date as inline row with colored dot */
   .milestone-date {
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     gap: 6px;
+  }
+
+  .milestone-date::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--dot-color, var(--accent));
+    flex-shrink: 0;
+  }
+
+  .milestone-date-main {
+    font-size: 12px;
+  }
+
+  .milestone-date-year {
+    font-size: 10px;
+  }
+
+  .milestone-title {
+    font-size: 0.88rem;
+  }
+
+  .milestone-org {
+    font-size: 12px;
+  }
+
+  /* Touch-friendly expanded details */
+  .detail-block p {
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .detail-list,
+  .source-list {
+    font-size: 13px;
+  }
+
+  .milestone-tag {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+
+  /* Tighter tag chips in filters */
+  .tag-chip {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .filters-panel {
+    padding: 12px;
+  }
+
+  .empty-state {
+    padding: 32px 16px;
+  }
+
+  .empty-state h2 {
+    font-size: 1.2rem;
   }
 }
 
