@@ -541,9 +541,11 @@ a:hover {
   display: grid;
   grid-template-rows: 0fr;
   opacity: 0;
+  will-change: grid-template-rows, opacity;
+  /* Collapse: height shrinks over 250ms, opacity drops immediately */
   transition:
-    grid-template-rows 280ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 200ms ease 60ms;
+    grid-template-rows 250ms cubic-bezier(0.4, 0, 1, 1),
+    opacity 150ms ease;
 }
 
 .milestone-details-inner {
@@ -554,9 +556,11 @@ a:hover {
 .milestone-card.is-expanded .milestone-details {
   grid-template-rows: 1fr;
   opacity: 1;
+  /* Expand: height grows over 380ms with gentle ease-out,
+     opacity fades in AFTER height is mostly done */
   transition:
-    grid-template-rows 280ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 220ms ease 40ms;
+    grid-template-rows 380ms cubic-bezier(0, 0, 0.2, 1),
+    opacity 200ms ease 180ms;
 }
 
 .milestone-card.is-expanded .milestone-shell {
