@@ -1,0 +1,25 @@
+{
+  "date": "2024-12-20",
+  "title": "OpenAI o3 ARC-AGI Breakthrough",
+  "organization": "OpenAI",
+  "level": "high",
+  "tags": ["openai", "model-release", "o3", "reasoning", "arc-agi", "benchmark"],
+  "description": "OpenAI announced o3, achieving a historic breakthrough on the ARC-AGI (Abstraction and Reasoning Corpus for Artificial General Intelligence) benchmark. In low-compute mode, o3 scored 75.7%, surpassing human-level performance (85% threshold for AGI). In high-compute mode with extended thinking time, o3 reached 87.5%, becoming the first AI system to exceed human baseline performance on this challenging abstract reasoning benchmark designed specifically to test general intelligence capabilities.",
+  "highlights": [
+    "75.7% on ARC-AGI (low-compute mode)",
+    "87.5% on ARC-AGI (high-compute mode)",
+    "First AI to surpass human baseline (85%)",
+    "Historic AGI milestone",
+    "Demonstrates novel reasoning capabilities"
+  ],
+  "sources": [
+    {
+      "title": "OpenAI o3 Announcement",
+      "url": "https://openai.com/12-days/"
+    },
+    {
+      "title": "ARC Prize - o3 Results Analysis",
+      "url": "https://arcprize.org/blog/o3-breakthrough"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2016-03-09",
+  "title": "AlphaGo Defeats Lee Sedol",
+  "organization": "Google DeepMind",
+  "level": "high",
+  "tags": ["google-deepmind", "game-playing", "reinforcement-learning", "ai", "benchmark"],
+  "description": "In a historic five-game match, AlphaGo defeated legendary Go player Lee Sedol 4-1. The match drew global attention, with over 280 million viewers in China alone. Game 2's move 37 was called 'divine' by commentators, showing creative play beyond human intuition.",
+  "highlights": [
+    "First AI to defeat world champion Go player",
+    "4-1 victory over Lee Sedol",
+    "Move 37 in Game 2 called 'divine'",
+    "Watched by 280 million in China",
+    "Featured in documentary 'AlphaGo'"
+  ],
+  "sources": [
+    {
+      "title": "AlphaGo vs Lee Sedol",
+      "url": "https://deepmind.google/research/highlighted-research/alphago/"
+    }
+  ]
+}

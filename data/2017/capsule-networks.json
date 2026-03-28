@@ -1,0 +1,21 @@
+{
+  "date": "2017-10-26",
+  "title": "Dynamic Routing Between Capsules",
+  "organization": "Google",
+  "level": "high",
+  "tags": ["research-paper", "capsule-networks", "vision", "hinton"],
+  "description": "Geoffrey Hinton and Sara Sabour introduced Capsule Networks, a new architecture that preserves spatial hierarchies between features. Unlike CNNs, capsules output vectors representing instantiation parameters (pose, orientation, etc.) and use dynamic routing. The paper achieved state-of-the-art on MNIST with far fewer parameters and showed superior performance on overlapping digits.",
+  "highlights": [
+    "Vector outputs preserve spatial hierarchies",
+    "Dynamic routing between capsules",
+    "Equivariance to transformations",
+    "State-of-the-art on MNIST",
+    "Superior to CNNs on overlapping objects"
+  ],
+  "sources": [
+    {
+      "title": "Capsule Networks Paper (NIPS 2017)",
+      "url": "https://arxiv.org/abs/1710.09829"
+    }
+  ]
+}

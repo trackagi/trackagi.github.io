@@ -1,0 +1,25 @@
+{
+  "date": "2023-03-14",
+  "title": "GPT-4 Released",
+  "organization": "OpenAI",
+  "level": "high",
+  "tags": ["openai", "model-release", "gpt", "llm", "multimodal"],
+  "description": "OpenAI released GPT-4, a large multimodal model accepting image and text inputs. It demonstrated human-level performance on professional exams (bar exam, SAT) and significantly improved reasoning capabilities. The model was trained with RLHF and constitutional AI techniques for safety.",
+  "highlights": [
+    "Multimodal (text + images)",
+    "Human-level exam performance",
+    "8K and 32K context windows",
+    "Training cost >$100M",
+    "82% less restricted content vs GPT-3.5"
+  ],
+  "sources": [
+    {
+      "title": "GPT-4 Technical Report",
+      "url": "https://arxiv.org/abs/2303.08774"
+    },
+    {
+      "title": "OpenAI GPT-4 Announcement",
+      "url": "https://openai.com/research/gpt-4"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2023-11-06",
+  "title": "OpenAI GPTs and Assistants API",
+  "organization": "OpenAI",
+  "level": "high",
+  "tags": ["openai", "product-launch", "gpt", "agent", "api-release"],
+  "description": "At DevDay, OpenAI announced GPTs (custom versions of ChatGPT), the Assistants API, GPT-4 Turbo with 128K context, and multimodal capabilities. This enabled developers to build AI agents with persistent threads, built-in retrieval, and code interpreter capabilities.",
+  "highlights": [
+    "GPTs (custom ChatGPT versions)",
+    "Assistants API for agents",
+    "GPT-4 Turbo (128K context)",
+    "Multimodal vision capabilities",
+    "GPT Store announced"
+  ],
+  "sources": [
+    {
+      "title": "OpenAI DevDay Announcements",
+      "url": "https://openai.com/blog/new-models-and-developer-products-announced-at-devday"
+    }
+  ]
+}

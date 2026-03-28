@@ -1,0 +1,21 @@
+{
+  "date": "2023-02-01",
+  "title": "ChatGPT Plus Launched",
+  "organization": "OpenAI",
+  "level": "low",
+  "tags": ["openai", "product-launch", "chatgpt", "gpt", "monetization"],
+  "description": "OpenAI launched ChatGPT Plus, a $20/month subscription offering faster response times, priority access during peak times, and early access to new features. This marked the beginning of monetization for consumer AI products at scale.",
+  "highlights": [
+    "$20/month subscription",
+    "Faster response times",
+    "Priority access during peak hours",
+    "Early access to new features",
+    "First major consumer AI monetization"
+  ],
+  "sources": [
+    {
+      "title": "ChatGPT Plus",
+      "url": "https://openai.com/blog/chatgpt-plus"
+    }
+  ]
+}

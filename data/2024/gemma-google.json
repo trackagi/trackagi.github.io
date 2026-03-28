@@ -1,0 +1,21 @@
+{
+  "date": "2024-02-21",
+  "title": "Gemma Open Models Released",
+  "organization": "Google",
+  "level": "high",
+  "tags": ["google", "model-release", "open-source", "gemma", "llm"],
+  "description": "Google released Gemma, a family of open lightweight language models built from the same research and technology used to create Gemini. Available in 2B and 7B parameter sizes, Gemma models were state-of-the-art for their size class, outperforming Llama-2 7B and Mistral 7B on key benchmarks. The models were released with responsible AI safeguards and commercial-friendly terms.",
+  "highlights": [
+    "2B and 7B parameter models",
+    "Built on Gemini research and technology",
+    "State-of-the-art for size class",
+    "Outperformed Llama-2 and Mistral 7B",
+    "Commercial-friendly open license"
+  ],
+  "sources": [
+    {
+      "title": "Gemma: Introducing New State-of-the-Art Open Models",
+      "url": "https://blog.google/technology/ai/google-gemma-open-models/"
+    }
+  ]
+}

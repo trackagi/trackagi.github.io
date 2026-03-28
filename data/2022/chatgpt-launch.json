@@ -1,0 +1,21 @@
+{
+  "date": "2022-11-30",
+  "title": "ChatGPT Launch",
+  "organization": "OpenAI",
+  "level": "high",
+  "tags": ["openai", "product-launch", "chatgpt", "gpt", "llm"],
+  "description": "OpenAI launched ChatGPT, a conversational AI based on GPT-3.5 fine-tuned with RLHF. The product gained 1 million users in 5 days and 100 million in 2 months, becoming the fastest-growing consumer application in history and bringing AI into mainstream consciousness.",
+  "highlights": [
+    "1 million users in 5 days",
+    "100 million users in 2 months",
+    "Fastest-growing consumer app ever",
+    "RLHF for safety and alignment",
+    "Brought AI to mainstream awareness"
+  ],
+  "sources": [
+    {
+      "title": "ChatGPT Blog Post",
+      "url": "https://openai.com/blog/chatgpt/"
+    }
+  ]
+}

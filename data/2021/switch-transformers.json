@@ -1,0 +1,21 @@
+{
+  "date": "2021-01-11",
+  "title": "Switch Transformers: Scaling to Trillion Parameter Models",
+  "organization": "Google",
+  "level": "high",
+  "tags": ["research-paper", "mixture-of-experts", "scaling", "transformer"],
+  "description": "Google introduced Switch Transformers, a sparse expert model with 1.6 trillion parameters that uses Mixture of Experts (MoE) architecture. Each token routes to only a subset of experts, making inference efficient despite massive parameter count. This architecture enabled training models 7x larger than dense models with same compute budget.",
+  "highlights": [
+    "1.6 trillion parameters",
+    "Mixture of Experts architecture",
+    "Sparse activation - efficient inference",
+    "7x faster training than dense models",
+    "Pathways architecture foundation"
+  ],
+  "sources": [
+    {
+      "title": "Switch Transformers Paper",
+      "url": "https://arxiv.org/abs/2101.03961"
+    }
+  ]
+}

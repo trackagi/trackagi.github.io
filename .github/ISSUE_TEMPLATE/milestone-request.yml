@@ -1,0 +1,65 @@
+name: Milestone Request
+description: Suggest a new AI milestone to add to the timeline
+labels: ["milestone-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a milestone! Please fill in as much as you can.
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: When did this milestone occur?
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: A clear, descriptive title
+      placeholder: "e.g., GPT-5 Release"
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: Organization
+      description: Which organization is responsible?
+      placeholder: "e.g., OpenAI"
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Significance Level
+      options:
+        - "high - Major release, breakthrough, or industry-shifting event"
+        - "low - Technical improvement, incremental update, or minor feature"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Factual description with concrete details and metrics where available
+      placeholder: "What happened? Why is it significant?"
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Links to official announcements, papers, or reputable coverage
+      placeholder: |
+        - [Title](URL)
+        - [Title](URL)
+    validations:
+      required: true
+  - type: textarea
+    id: tags
+    attributes:
+      label: Suggested Tags
+      description: "Relevant tags (see scripts/validate.py for the full list)"
+      placeholder: "e.g., model-release, llm, reasoning"

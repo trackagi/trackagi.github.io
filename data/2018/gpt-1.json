@@ -1,0 +1,21 @@
+{
+  "date": "2018-06-11",
+  "title": "GPT-1: Improving Language Understanding by Generative Pre-Training",
+  "organization": "OpenAI",
+  "level": "high",
+  "tags": ["openai", "research-paper", "gpt", "llm", "transformer"],
+  "description": "OpenAI introduced GPT-1 (Generative Pre-trained Transformer), demonstrating that unsupervised pre-training on large text corpora followed by supervised fine-tuning could achieve state-of-the-art results on various NLP benchmarks. This established the pre-training paradigm.",
+  "highlights": [
+    "First GPT model - 117M parameters",
+    "Unsupervised pre-training + supervised fine-tuning",
+    "Transformer decoder architecture",
+    "Trained on BookCorpus (7,000 books)",
+    "Established pre-training paradigm for NLP"
+  ],
+  "sources": [
+    {
+      "title": "GPT-1 Paper",
+      "url": "https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf"
+    }
+  ]
+}

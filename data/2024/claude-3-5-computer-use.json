@@ -1,0 +1,21 @@
+{
+  "date": "2024-10-22",
+  "title": "Claude 3.5 Sonnet with Computer Use",
+  "organization": "Anthropic",
+  "level": "high",
+  "tags": ["anthropic", "model-release", "claude", "agent", "computer-use"],
+  "description": "Anthropic released an upgraded Claude 3.5 Sonnet with 'computer use' capabilities, allowing the AI to directly interact with computers - moving the mouse, clicking buttons, and typing text. This enabled AI agents to perform complex multi-step tasks autonomously.",
+  "highlights": [
+    "Direct computer interaction capability",
+    "Can move mouse and type",
+    "Performs complex multi-step tasks",
+    "Computer use API in public beta",
+    "First frontier model with computer use"
+  ],
+  "sources": [
+    {
+      "title": "Claude 3.5 Sonnet and Computer Use",
+      "url": "https://www.anthropic.com/news/3-5-models-and-computer-use"
+    }
+  ]
+}

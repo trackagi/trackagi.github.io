@@ -1,0 +1,21 @@
+{
+  "date": "2015-12-10",
+  "title": "Deep Residual Learning (ResNet)",
+  "organization": "Microsoft",
+  "level": "high",
+  "tags": ["microsoft", "research-paper", "vision", "deep-learning", "cnn"],
+  "description": "Microsoft Research introduced ResNet, a revolutionary architecture using skip connections to train networks with 152+ layers. This solved the vanishing gradient problem and won ImageNet 2015 with 3.57% error, surpassing human performance for the first time.",
+  "highlights": [
+    "152 layers (vs. 8 in AlexNet)",
+    "Skip connections (residual learning)",
+    "Solved vanishing gradient problem",
+    "First to surpass human-level accuracy",
+    "Architecture widely adopted"
+  ],
+  "sources": [
+    {
+      "title": "Deep Residual Learning Paper",
+      "url": "https://arxiv.org/abs/1512.03385"
+    }
+  ]
+}

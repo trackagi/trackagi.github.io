@@ -1,0 +1,21 @@
+{
+  "date": "2024-05-13",
+  "title": "Phi-3 Technical Report: A Highly Capable Language Model",
+  "organization": "Microsoft",
+  "level": "high",
+  "tags": ["research-paper", "phi", "small-models", "microsoft"],
+  "description": "Microsoft released Phi-3, showing that smaller models (3.8B parameters) can achieve remarkable performance rivaling much larger models. By curating high-quality textbook quality training data, Phi-3-mini matched Llama 2 7B and approached Mixtral 8x7B on benchmarks. This demonstrated that data quality can compensate for model size, challenging the bigger is always better paradigm.",
+  "highlights": [
+    "3.8B params matches Llama 2 7B",
+    "Textbook-quality training data",
+    "Small but highly capable",
+    "Challenges scaling laws assumptions",
+    "Mobile-friendly size"
+  ],
+  "sources": [
+    {
+      "title": "Phi-3 Technical Report",
+      "url": "https://arxiv.org/abs/2404.14219"
+    }
+  ]
+}

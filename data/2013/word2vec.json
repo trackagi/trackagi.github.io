@@ -1,0 +1,20 @@
+{
+  "date": "2013-01-16",
+  "title": "Word2Vec: Efficient Estimation of Word Representations",
+  "organization": "Google",
+  "level": "high",
+  "tags": ["google", "research-paper", "nlp", "word-embeddings", "deep-learning"],
+  "description": "Google researchers introduced Word2Vec, a revolutionary neural network architecture for creating word embeddings that captured semantic meaning. This marked a major breakthrough in natural language processing by showing that neural networks could learn meaningful representations of language from raw text.",
+  "highlights": [
+    "Introduced skip-gram and CBOW architectures",
+    "Enabled semantic word relationships (king - man + woman = queen)",
+    "Trained on 100 billion words from Google News",
+    "Became foundational for modern NLP"
+  ],
+  "sources": [
+    {
+      "title": "Word2Vec Research Paper",
+      "url": "https://arxiv.org/abs/1301.3781"
+    }
+  ]
+}

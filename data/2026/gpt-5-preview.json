@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-20",
+  "title": "GPT-5 Technical Preview",
+  "organization": "OpenAI",
+  "level": "high",
+  "tags": ["openai", "model-release", "gpt", "llm", "multimodal"],
+  "description": "OpenAI announced GPT-5 technical preview, showcasing breakthrough capabilities in reasoning, multimodal understanding across text, images, audio, and video, as well as significantly improved coding and mathematical problem-solving abilities. The model demonstrates near-expert level performance on professional examinations.",
+  "highlights": [
+    "Breakthrough reasoning capabilities",
+    "Full multimodal integration",
+    "Near-expert level exam performance",
+    "Advanced code generation",
+    "Improved factual accuracy and safety"
+  ],
+  "sources": [
+    {
+      "title": "GPT-5 Technical Preview",
+      "url": "https://openai.com/blog/gpt-5-preview"
+    }
+  ]
+}

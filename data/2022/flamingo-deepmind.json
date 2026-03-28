@@ -1,0 +1,21 @@
+{
+  "date": "2022-04-29",
+  "title": "Flamingo: A Visual Language Model for Few-Shot Learning",
+  "organization": "Google DeepMind",
+  "level": "high",
+  "tags": ["research-paper", "multimodal", "few-shot", "deepmind"],
+  "description": "DeepMind introduced Flamingo, a visual language model that can rapidly adapt to new tasks with just a few examples (few-shot learning). It combines pretrained vision and language models with new architecture components, achieving state-of-the-art on image and video understanding benchmarks without task-specific fine-tuning. Showed the power of frozen pretrained models with light-weight adapters.",
+  "highlights": [
+    "Few-shot visual understanding",
+    "No task-specific fine-tuning needed",
+    "Frozen pretrained components",
+    "State-of-the-art on multiple benchmarks",
+    "Vision + language integration"
+  ],
+  "sources": [
+    {
+      "title": "Flamingo Paper (NeurIPS 2022)",
+      "url": "https://arxiv.org/abs/2204.14198"
+    }
+  ]
+}

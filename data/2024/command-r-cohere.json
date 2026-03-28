@@ -1,0 +1,21 @@
+{
+  "date": "2024-03-11",
+  "title": "Command R Released",
+  "organization": "Cohere",
+  "level": "high",
+  "tags": ["cohere", "model-release", "open-source", "command-r", "long-context"],
+  "description": "Cohere released Command R, an open-source large language model optimized for long-context tasks and retrieval augmented generation (RAG). With 128K token context window and strong performance on tool use and RAG benchmarks, it was designed for enterprise applications. Command R balanced high performance with efficiency, making powerful LLMs more accessible for production use.",
+  "highlights": [
+    "128K token context window",
+    "Optimized for RAG and tool use",
+    "Strong enterprise capabilities",
+    "Efficient performance for production",
+    "CC BY-NC open license"
+  ],
+  "sources": [
+    {
+      "title": "Command R: Open Source, RAG-Optimized Model",
+      "url": "https://cohere.com/blog/command-r"
+    }
+  ]
+}

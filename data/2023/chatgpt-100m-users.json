@@ -1,0 +1,21 @@
+{
+  "date": "2023-10-12",
+  "title": "ChatGPT Reaches 100 Million Weekly Users",
+  "organization": "OpenAI",
+  "level": "high",
+  "tags": ["openai", "product-launch", "chatgpt", "milestone"],
+  "description": "OpenAI announced that ChatGPT had reached 100 million weekly active users, less than a year after its launch. This milestone cemented ChatGPT as one of the fastest-growing consumer applications in history and demonstrated massive mainstream AI adoption.",
+  "highlights": [
+    "100 million weekly active users",
+    "Fastest-growing consumer app",
+    "Less than 1 year since launch",
+    "Mainstream AI adoption achieved",
+    "1 million+ API developers"
+  ],
+  "sources": [
+    {
+      "title": "OpenAI DevDay Announcements",
+      "url": "https://openai.com/blog/new-models-and-developer-products-announced-at-devday"
+    }
+  ]
+}

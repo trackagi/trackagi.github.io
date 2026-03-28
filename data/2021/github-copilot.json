@@ -1,0 +1,21 @@
+{
+  "date": "2021-06-29",
+  "title": "GitHub Copilot Technical Preview",
+  "organization": "GitHub",
+  "level": "high",
+  "tags": ["github", "product-launch", "coding", "copilot", "openai"],
+  "description": "GitHub launched Copilot technical preview, an AI pair programmer powered by OpenAI Codex. It provided code suggestions directly in the editor, trained on billions of lines of public code. The tool demonstrated practical AI assistance for software development at scale.",
+  "highlights": [
+    "AI pair programmer in VS Code",
+    "Powered by OpenAI Codex",
+    "Trained on billions of lines of code",
+    "Real-time code suggestions",
+    "1 million+ users in first year"
+  ],
+  "sources": [
+    {
+      "title": "GitHub Copilot Announcement",
+      "url": "https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/"
+    }
+  ]
+}

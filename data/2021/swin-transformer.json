@@ -1,0 +1,21 @@
+{
+  "date": "2021-03-25",
+  "title": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+  "organization": "Microsoft",
+  "level": "high",
+  "tags": ["research-paper", "vision", "transformer", "swin"],
+  "description": "Microsoft Research Asia introduced Swin Transformer, a hierarchical vision transformer that uses shifted windows to compute self-attention. It achieved state-of-the-art performance on image classification, object detection, and semantic segmentation. Swin Transformer became a foundational architecture for computer vision, winning ICCV 2021 Best Paper.",
+  "highlights": [
+    "Hierarchical vision architecture",
+    "Shifted window self-attention",
+    "Linear computational complexity",
+    "State-of-the-art on ImageNet",
+    "ICCV 2021 Best Paper"
+  ],
+  "sources": [
+    {
+      "title": "Swin Transformer Paper (ICCV 2021)",
+      "url": "https://arxiv.org/abs/2103.14030"
+    }
+  ]
+}

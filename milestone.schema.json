@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AGI Progress Milestone",
+  "description": "A milestone entry for the AGI Progress Tracker",
+  "type": "object",
+  "required": ["date", "title", "organization", "level", "tags", "description", "sources"],
+  "additionalProperties": false,
+  "properties": {
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Date in YYYY-MM-DD format"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Clear, descriptive title of the milestone"
+    },
+    "organization": {
+      "type": "string",
+      "enum": [
+        "OpenAI",
+        "Google",
+        "Google DeepMind",
+        "Anthropic",
+        "Meta AI",
+        "Microsoft",
+        "Mistral AI",
+        "Cohere",
+        "AI21 Labs",
+        "Stability AI",
+        "NVIDIA",
+        "EleutherAI",
+        "Allen Institute for AI",
+        "Berkeley",
+        "Stanford",
+        "DeepSeek",
+        "xAI",
+        "Midjourney",
+        "Character.AI",
+        "Apple",
+        "Amazon",
+        "Samsung",
+        "Baidu",
+        "Alibaba",
+        "Tencent",
+        "Yandex",
+        "Naver",
+        "University of Toronto",
+        "University of Montreal",
+        "University of Oxford",
+        "GitHub",
+        "Cognition Labs",
+        "University of Manchester",
+        "Salesforce",
+        "Carnegie Mellon",
+        "Databricks",
+        "Moonshot AI"
+      ],
+      "description": "Organization responsible for the milestone"
+    },
+    "level": {
+      "type": "string",
+      "enum": ["high", "low"],
+      "description": "Impact level: high = major releases/breakthroughs, low = incremental updates"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "description": "Categorization tags (see scripts/validate.py for canonical tags)"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Factual, specific description"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "url"],
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the source"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL of the source"
+          }
+        }
+      },
+      "minItems": 1,
+      "description": "References with title and URL"
+    },
+    "highlights": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Key bullet points (optional, 1-5 items)"
+    }
+  }
+}

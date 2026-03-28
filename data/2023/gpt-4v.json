@@ -1,0 +1,21 @@
+{
+  "date": "2023-09-25",
+  "title": "GPT-4 with Vision (GPT-4V)",
+  "organization": "OpenAI",
+  "level": "high",
+  "tags": ["openai", "model-release", "gpt", "vision", "multimodal"],
+  "description": "OpenAI released GPT-4 with vision capabilities, allowing the model to understand and reason about images. It could analyze photographs, charts, diagrams, and documents, marking a major step toward truly multimodal AI systems.",
+  "highlights": [
+    "Image understanding capabilities",
+    "Analyze charts and diagrams",
+    "Read text from images (OCR)",
+    "Visual reasoning and description",
+    "Available in ChatGPT and API"
+  ],
+  "sources": [
+    {
+      "title": "GPT-4V(ision) System Card",
+      "url": "https://openai.com/research/gpt-4v-system-card"
+    }
+  ]
+}

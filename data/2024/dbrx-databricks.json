@@ -1,0 +1,21 @@
+{
+  "date": "2024-03-27",
+  "title": "DBRX: A New Standard for Open LLMs",
+  "organization": "Databricks",
+  "level": "high",
+  "tags": ["research-paper", "dbrx", "mixture-of-experts", "open-source"],
+  "description": "Databricks released DBRX, a 132B parameter Mixture of Experts (MoE) model with 36B active parameters. It outperformed GPT-3.5, Mixtral, and Grok-1 on standard benchmarks. DBRX used a 16-expert architecture with 4 active experts per token, achieving inference speed comparable to smaller dense models. Released as open-source under permissive license.",
+  "highlights": [
+    "132B total / 36B active parameters",
+    "16 experts, 4 active per token",
+    "Outperforms GPT-3.5 and Mixtral",
+    "Inference speed like smaller models",
+    "Open-source MoE architecture"
+  ],
+  "sources": [
+    {
+      "title": "DBRX Technical Report",
+      "url": "https://www.databricks.com/blog/introducing-dbrx-new-standard-efficient-open-source-customizable-llms"
+    }
+  ]
+}

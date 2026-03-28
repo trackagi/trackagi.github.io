@@ -1,0 +1,21 @@
+{
+  "date": "2023-05-10",
+  "title": "Google PaLM 2 and Bard Updates",
+  "organization": "Google",
+  "level": "high",
+  "tags": ["google", "model-release", "palm", "llm", "bard"],
+  "description": "Google announced PaLM 2, their next-generation large language model, along with major updates to Bard. PaLM 2 featured improved multilingual, reasoning, and coding capabilities. This marked Google's serious entry into the chatbot wars against OpenAI's ChatGPT.",
+  "highlights": [
+    "Successor to PaLM (540B)",
+    "Improved multilingual support",
+    "Better reasoning and coding",
+    "Bard available globally",
+    "Google's response to ChatGPT"
+  ],
+  "sources": [
+    {
+      "title": "Google I/O 2023: PaLM 2",
+      "url": "https://blog.google/technology/ai/google-palm-2-ai-large-language-model/"
+    }
+  ]
+}

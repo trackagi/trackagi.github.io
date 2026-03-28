@@ -1,0 +1,21 @@
+{
+  "date": "2017-06-12",
+  "title": "Attention Is All You Need: The Transformer",
+  "organization": "Google",
+  "level": "high",
+  "tags": ["google", "research-paper", "nlp", "transformer", "attention"],
+  "description": "Google researchers published the Transformer architecture, completely revolutionizing NLP by replacing recurrence with attention mechanisms. This paper became the foundation for GPT, BERT, and virtually all modern large language models, enabling parallel training and better long-range dependencies.",
+  "highlights": [
+    "Introduced self-attention mechanism",
+    "Eliminated recurrent connections",
+    "Enabled parallel training (much faster)",
+    "Foundation for all modern LLMs",
+    "GPT, BERT, T5 all derived from this"
+  ],
+  "sources": [
+    {
+      "title": "Attention Is All You Need",
+      "url": "https://arxiv.org/abs/1706.03762"
+    }
+  ]
+}

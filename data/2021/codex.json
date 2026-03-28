@@ -1,0 +1,21 @@
+{
+  "date": "2021-08-10",
+  "title": "OpenAI Codex API Released",
+  "organization": "OpenAI",
+  "level": "low",
+  "tags": ["openai", "api-release", "coding", "codex"],
+  "description": "OpenAI released the Codex API, providing access to the model powering GitHub Copilot. The model was trained on 54 million GitHub repositories and could interpret natural language and execute over a dozen programming languages.",
+  "highlights": [
+    "API access to Copilot model",
+    "Trained on 54M GitHub repos",
+    "12B parameters",
+    "Support for 12+ programming languages",
+    "Natural language to code translation"
+  ],
+  "sources": [
+    {
+      "title": "OpenAI Codex API",
+      "url": "https://openai.com/blog/openai-codex/"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2024-09-19",
+  "title": "Qwen 2.5 Released",
+  "organization": "Alibaba",
+  "level": "high",
+  "tags": ["alibaba", "model-release", "open-source", "qwen", "llm", "multimodal"],
+  "description": "Alibaba released Qwen 2.5, a comprehensive family of open-source language models ranging from 0.5B to 72B parameters. The flagship Qwen2.5-72B-Instruct outperformed Llama 3.1 405B on several benchmarks while being much smaller. The release included specialized coding and math models, plus multimodal variants (Qwen2-VL, Qwen2-Audio), showcasing Alibaba's commitment to open AI development.",
+  "highlights": [
+    "Family from 0.5B to 72B parameters",
+    "72B model outperformed Llama 3.1 405B",
+    "Specialized coding and math variants",
+    "Multimodal vision and audio models",
+    "Apache 2.0 license"
+  ],
+  "sources": [
+    {
+      "title": "Qwen2.5 Release Notes",
+      "url": "https://qwenlm.github.io/blog/qwen2.5/"
+    }
+  ]
+}

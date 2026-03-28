@@ -1,0 +1,21 @@
+{
+  "date": "2016-12-05",
+  "title": "OpenAI Universe Released",
+  "organization": "OpenAI",
+  "level": "low",
+  "tags": ["openai", "open-source", "product-launch", "reinforcement-learning", "agent"],
+  "description": "OpenAI released Universe, a platform for measuring and training AI agents across diverse environments including games, web interfaces, and applications. It provided a single interface to thousands of environments using Virtual Network Computing (VNC).",
+  "highlights": [
+    "Unified interface for AI training environments",
+    "Support for games, web, and apps",
+    "Used VNC for environment control",
+    "Aimed to accelerate reinforcement learning research",
+    "Later evolved into more focused projects"
+  ],
+  "sources": [
+    {
+      "title": "OpenAI Universe Blog Post",
+      "url": "https://openai.com/blog/universe/"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2022-05-12",
+  "title": "Gato: A Generalist Agent",
+  "organization": "Google DeepMind",
+  "level": "high",
+  "tags": ["research-paper", "generalist-agent", "reinforcement-learning", "deepmind"],
+  "description": "DeepMind introduced Gato, a single transformer model trained to perform hundreds of different tasks including playing Atari games, captioning images, engaging in dialogue, and controlling robotic arms. Using the same network weights across all tasks, Gato demonstrated the possibility of generalist AI agents. It achieved over 50% expert performance on 450 out of 604 tasks.",
+  "highlights": [
+    "Single model for 600+ tasks",
+    "Games, images, text, robotics",
+    "Same weights across all tasks",
+    "Generalist AI approach",
+    "450/604 tasks at expert level"
+  ],
+  "sources": [
+    {
+      "title": "Gato Paper (Nature 2023)",
+      "url": "https://www.nature.com/articles/s41586-023-06009-1"
+    }
+  ]
+}

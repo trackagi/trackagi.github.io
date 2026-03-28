@@ -1,0 +1,21 @@
+{
+  "date": "2023-04-17",
+  "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+  "organization": "Carnegie Mellon",
+  "level": "high",
+  "tags": ["research-paper", "mamba", "state-space-models", "architecture"],
+  "description": "Researchers introduced Mamba, a new architecture combining efficient hardware-aware designs with selective state spaces. Mamba achieves linear-time complexity O(L) vs Transformer quadratic O(L²), matching or exceeding Transformer performance on language tasks while being 5x faster at inference. It handles extremely long sequences (millions of tokens) efficiently.",
+  "highlights": [
+    "Linear time complexity O(L)",
+    "5x faster inference than Transformers",
+    "Selective state space mechanism",
+    "Handles millions of tokens",
+    "Challenges Transformer dominance"
+  ],
+  "sources": [
+    {
+      "title": "Mamba Paper",
+      "url": "https://arxiv.org/abs/2312.00752"
+    }
+  ]
+}

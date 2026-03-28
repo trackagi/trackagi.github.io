@@ -1,0 +1,21 @@
+{
+  "date": "2020-11-30",
+  "title": "AlphaFold2 Solves Protein Folding",
+  "organization": "Google DeepMind",
+  "level": "high",
+  "tags": ["google-deepmind", "research-paper", "alphafold", "science", "benchmark"],
+  "description": "DeepMind's AlphaFold2 achieved near-atomic accuracy in predicting protein structures, solving a 50-year-old grand challenge in biology. At CASP14, it achieved a median GDT score of 92.4, competitive with experimental results. This breakthrough has massive implications for drug discovery and understanding disease.",
+  "highlights": [
+    "Solved 50-year protein folding problem",
+    "Near-atomic accuracy (GDT 92.4)",
+    "Competitive with experimental methods",
+    "Published 200M+ protein structures",
+    "Massive impact on biology and medicine"
+  ],
+  "sources": [
+    {
+      "title": "Highly Accurate Protein Structure Prediction",
+      "url": "https://www.nature.com/articles/s41586-021-03819-2"
+    }
+  ]
+}

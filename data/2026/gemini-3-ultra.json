@@ -1,0 +1,21 @@
+{
+  "date": "2026-03-05",
+  "title": "Gemini 3.0 Ultra Released",
+  "organization": "Google",
+  "level": "high",
+  "tags": ["google", "model-release", "gemini", "llm", "multimodal"],
+  "description": "Google released Gemini 3.0 Ultra, featuring massive improvements in reasoning, coding, and multimodal capabilities. The model supports up to 10 million token context windows and demonstrates state-of-the-art performance on mathematics, science, and coding benchmarks while maintaining efficient inference.",
+  "highlights": [
+    "10 million token context window",
+    "State-of-the-art STEM performance",
+    "Efficient MoE architecture",
+    "Advanced video understanding",
+    "Real-time multimodal reasoning"
+  ],
+  "sources": [
+    {
+      "title": "Gemini 3.0 Ultra Announcement",
+      "url": "https://blog.google/technology/ai/google-gemini-3-ultra/"
+    }
+  ]
+}

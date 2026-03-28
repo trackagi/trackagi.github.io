@@ -1,0 +1,21 @@
+{
+  "date": "2015-10-27",
+  "title": "AlphaGo Defeats European Champion",
+  "organization": "Google DeepMind",
+  "level": "high",
+  "tags": ["google-deepmind", "product-launch", "game-playing", "reinforcement-learning", "ai"],
+  "description": "DeepMind's AlphaGo defeated European Go champion Fan Hui 5-0 in a formal match, the first time a computer program defeated a professional Go player. This was a landmark achievement as Go was considered much more complex than chess.",
+  "highlights": [
+    "First AI to defeat professional Go player",
+    "Combined deep neural networks with Monte Carlo tree search",
+    "Trained on 30 million positions from human games",
+    "Used policy and value networks",
+    "Paved way for Lee Sedol match"
+  ],
+  "sources": [
+    {
+      "title": "Mastering the Game of Go",
+      "url": "https://www.nature.com/articles/nature16961"
+    }
+  ]
+}

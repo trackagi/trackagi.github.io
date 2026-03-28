@@ -1,0 +1,21 @@
+{
+  "date": "2018-11-14",
+  "title": "GPT-2 Preview Released",
+  "organization": "OpenAI",
+  "level": "low",
+  "tags": ["openai", "research-paper", "gpt", "llm"],
+  "description": "OpenAI released a small preview of GPT-2 but withheld the full model citing concerns about potential misuse for generating fake news. The decision sparked debate about AI safety and responsible release practices in the research community.",
+  "highlights": [
+    "1.5B parameters (full model withheld)",
+    "Concerns about fake news generation",
+    "Staged release approach",
+    "Sparked AI safety debate",
+    "Full model released later in 2019"
+  ],
+  "sources": [
+    {
+      "title": "Better Language Models and Their Implications",
+      "url": "https://openai.com/blog/better-language-models/"
+    }
+  ]
+}

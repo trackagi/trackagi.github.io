@@ -1,0 +1,21 @@
+{
+  "date": "2022-08-22",
+  "title": "Stable Diffusion Released",
+  "organization": "Stability AI",
+  "level": "high",
+  "tags": ["stability-ai", "model-release", "stable-diffusion", "image-generation", "open-source"],
+  "description": "Stability AI released Stable Diffusion, an open-source text-to-image diffusion model that could run on consumer GPUs. Unlike DALL-E, it was freely available, democratizing access to high-quality AI image generation and sparking a wave of creative AI applications.",
+  "highlights": [
+    "Open-source text-to-image model",
+    "Runs on consumer GPUs (8GB VRAM)",
+    "1B+ parameter diffusion model",
+    "Democratized image generation",
+    "Enabled vast creative ecosystem"
+  ],
+  "sources": [
+    {
+      "title": "Stable Diffusion Public Release",
+      "url": "https://stability.ai/blog/stable-diffusion-public-release"
+    }
+  ]
+}

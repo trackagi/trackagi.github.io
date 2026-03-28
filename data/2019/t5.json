@@ -1,0 +1,21 @@
+{
+  "date": "2019-10-23",
+  "title": "T5: Text-to-Text Transfer Transformer",
+  "organization": "Google",
+  "level": "high",
+  "tags": ["google", "research-paper", "t5", "llm", "transformer", "nlp"],
+  "description": "Google introduced T5, treating every NLP task as a text-to-text problem. This unified approach achieved state-of-the-art results across many benchmarks. The paper also introduced the famous C4 (Colossal Clean Crawled Corpus) dataset for pre-training.",
+  "highlights": [
+    "Unified text-to-text framework",
+    "All NLP tasks treated as generation",
+    "C4 dataset (750GB of clean text)",
+    "11B parameter model (T5-11B)",
+    "State-of-the-art on multiple benchmarks"
+  ],
+  "sources": [
+    {
+      "title": "Exploring the Limits of Transfer Learning",
+      "url": "https://arxiv.org/abs/1910.10683"
+    }
+  ]
+}

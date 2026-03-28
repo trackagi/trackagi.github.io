@@ -1,0 +1,21 @@
+{
+  "date": "2025-03-25",
+  "title": "Google Gemini 2.5 Pro Released",
+  "organization": "Google",
+  "level": "high",
+  "tags": ["google", "model-release", "gemini", "llm", "reasoning", "multimodal"],
+  "description": "Google released Gemini 2.5 Pro, their most advanced model with breakthrough reasoning capabilities and a 1 million token context window. The model topped the LM Arena leaderboard, featuring enhanced coding, complex problem-solving, and multimodal reasoning abilities.",
+  "highlights": [
+    "1 million token context window",
+    "Native multimodal reasoning",
+    "Top of LM Arena leaderboard",
+    "Enhanced coding capabilities",
+    "Complex multimodal problem-solving"
+  ],
+  "sources": [
+    {
+      "title": "Gemini 2.5 Pro",
+      "url": "https://blog.google/technology/ai/google-gemini-2-5-pro/"
+    }
+  ]
+}

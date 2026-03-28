@@ -1,0 +1,21 @@
+{
+  "date": "2015-11-09",
+  "title": "TensorFlow Released by Google",
+  "organization": "Google",
+  "level": "high",
+  "tags": ["google", "open-source", "product-launch", "framework", "deep-learning"],
+  "description": "Google open-sourced TensorFlow, an open-source machine learning framework that would become the dominant platform for deep learning research and production. It provided a flexible ecosystem of tools, libraries, and community resources.",
+  "highlights": [
+    "Open-source successor to DistBelief",
+    "Flexible architecture for various platforms",
+    "Support for deep neural networks and ML",
+    "Became industry standard framework",
+    "Enabled rapid AI development globally"
+  ],
+  "sources": [
+    {
+      "title": "TensorFlow Announcement",
+      "url": "https://blog.google/products/ai/machine-learning-better-for-everyone/"
+    }
+  ]
+}

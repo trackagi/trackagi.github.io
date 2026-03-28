@@ -1,0 +1,21 @@
+{
+  "date": "2018-10-11",
+  "title": "BERT: Pre-training of Deep Bidirectional Transformers",
+  "organization": "Google",
+  "level": "high",
+  "tags": ["google", "research-paper", "bert", "llm", "transformer", "nlp"],
+  "description": "Google introduced BERT (Bidirectional Encoder Representations from Transformers), achieving state-of-the-art results on 11 NLP tasks. Unlike previous models that read text left-to-right, BERT uses bidirectional training, reading entire word sequences simultaneously.",
+  "highlights": [
+    "Bidirectional training (vs. left-to-right)",
+    "340M parameters (BERT-large)",
+    "State-of-the-art on 11 NLP tasks",
+    "Introduced masked language modeling",
+    "Foundation for many downstream applications"
+  ],
+  "sources": [
+    {
+      "title": "BERT Paper",
+      "url": "https://arxiv.org/abs/1810.04805"
+    }
+  ]
+}

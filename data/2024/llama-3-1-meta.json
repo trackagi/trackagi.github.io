@@ -1,0 +1,21 @@
+{
+  "date": "2024-07-23",
+  "title": "Llama 3.1 Released",
+  "organization": "Meta AI",
+  "level": "high",
+  "tags": ["meta-ai", "model-release", "open-source", "llama", "llm", "long-context"],
+  "description": "Meta released Llama 3.1 with 8B, 70B, and 405B parameter models, representing the largest and most capable open-source LLM ever released. The 405B model matched or exceeded GPT-4o and Claude 3.5 Sonnet on many benchmarks while remaining fully open-source. The release included 128K context windows and multilingual support across eight languages, marking a major milestone for open AI.",
+  "highlights": [
+    "405B largest open-source LLM ever",
+    "Matched GPT-4o on many benchmarks",
+    "128K token context window",
+    "Multilingual support (8 languages)",
+    "Fully open-source weights"
+  ],
+  "sources": [
+    {
+      "title": "Llama 3.1 Model Release",
+      "url": "https://ai.meta.com/blog/meta-llama-3-1/"
+    }
+  ]
+}
