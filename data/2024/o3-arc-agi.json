@@ -14,12 +14,12 @@
   ],
   "sources": [
     {
-      "title": "OpenAI o3 Announcement",
-      "url": "https://openai.com/12-days/"
+      "title": "OpenAI o3 System Card",
+      "url": "https://openai.com/index/deliberative-alignment/"
     },
     {
-      "title": "ARC Prize - o3 Results Analysis",
-      "url": "https://arcprize.org/blog/o3-breakthrough"
+      "title": "ARC Prize - o3 Results on Leaderboard",
+      "url": "https://arcprize.org/leaderboard"
     }
   ]
 }

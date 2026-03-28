@@ -1,0 +1,21 @@
+{
+  "date": "2024-08-01",
+  "title": "FLUX Image Generation Models Released",
+  "organization": "Black Forest Labs",
+  "level": "high",
+  "tags": ["black-forest-labs", "model-release", "image-generation", "open-source", "flux"],
+  "description": "Black Forest Labs released FLUX, a suite of open-source image generation models including FLUX.1 [pro], [dev], and [schnell]. Created by former Stability AI researchers, FLUX rivaled or exceeded Midjourney and DALL-E 3 in quality while remaining fully open-source. The release reinvigorated the open-source image generation ecosystem.",
+  "highlights": [
+    "Three model variants (pro/dev/schnell)",
+    "12B parameter flow-matching architecture",
+    "Open-source under Apache 2.0",
+    "Superior text rendering in images",
+    "Created by Stable Diffusion original team"
+  ],
+  "sources": [
+    {
+      "title": "FLUX Models Release",
+      "url": "https://blackforestlabs.ai/"
+    }
+  ]
+}

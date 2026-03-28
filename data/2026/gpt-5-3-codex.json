@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-05",
+  "title": "Introducing GPT-5.3-Codex",
+  "organization": "OpenAI",
+  "level": "high",
+  "tags": ["openai", "model-release", "codex", "coding", "llm"],
+  "description": "OpenAI launched GPT-5.3-Codex, its most capable agentic coding model yet. The release combined the Codex and GPT-5 training stacks to improve code generation, reasoning, and steerable long-running coding workflows.",
+  "highlights": [
+    "Combined Codex and GPT-5 training stacks",
+    "Improved code generation and reasoning",
+    "Built for steerable coding workflows",
+    "Faster than prior Codex generations",
+    "A step toward general-purpose coding agents"
+  ],
+  "sources": [
+    {
+      "title": "Introducing GPT-5.3-Codex",
+      "url": "https://help.openai.com/en/articles/9624314-model-release-notes"
+    }
+  ]
+}

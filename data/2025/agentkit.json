@@ -1,0 +1,21 @@
+{
+  "date": "2025-10-06",
+  "title": "Introducing AgentKit",
+  "organization": "OpenAI",
+  "level": "high",
+  "tags": ["openai", "product-launch", "agent", "coding", "llm"],
+  "description": "OpenAI launched AgentKit, a complete set of tools for building, deploying, and optimizing agents. The release bundled visual workflow building, connector management, embedded chat experiences, and expanded evaluation features for production agent workflows.",
+  "highlights": [
+    "Agent Builder for visual workflow design",
+    "Connector Registry for data and tool governance",
+    "ChatKit for embedded agent experiences",
+    "Expanded eval and grading capabilities",
+    "Built to speed up production agent development"
+  ],
+  "sources": [
+    {
+      "title": "Introducing AgentKit",
+      "url": "https://openai.com/index/introducing-agentkit/"
+    }
+  ]
+}

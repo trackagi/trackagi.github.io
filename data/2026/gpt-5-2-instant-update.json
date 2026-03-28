@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-10",
+  "title": "GPT-5.2 Instant Update",
+  "organization": "OpenAI",
+  "level": "low",
+  "tags": ["openai", "model-release", "gpt", "llm", "reasoning"],
+  "description": "OpenAI shipped a GPT-5.2 Instant update that improved response style and quality in ChatGPT and the API. The update made answers more measured, grounded, and contextually appropriate for advice-seeking and how-to questions.",
+  "highlights": [
+    "Improved response style and quality",
+    "More measured, grounded tone",
+    "Better advice-seeking and how-to answers",
+    "Rolled out in ChatGPT and the API"
+  ],
+  "sources": [
+    {
+      "title": "GPT-5.2 Instant Update (February 10, 2026)",
+      "url": "https://help.openai.com/en/articles/9624314-model-release-notes"
+    }
+  ]
+}

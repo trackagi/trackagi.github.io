@@ -1,0 +1,20 @@
+{
+  "date": "2026-01-13",
+  "title": "Anthropic Launches Labs",
+  "organization": "Anthropic",
+  "level": "low",
+  "tags": ["anthropic", "milestone", "agent", "product-launch", "claude"],
+  "description": "Anthropic launched Labs as a team focused on incubating experimental products at the frontier of Claude's capabilities. The announcement highlighted a faster path from research previews into products that can scale reliably for customers.",
+  "highlights": [
+    "Incubates experimental frontier products",
+    "Builds on Claude Code and MCP momentum",
+    "Supports research previews and product scaling",
+    "Focuses on agentic desktop experiences"
+  ],
+  "sources": [
+    {
+      "title": "Introducing Labs",
+      "url": "https://www.anthropic.com/news/introducing-anthropic-labs"
+    }
+  ]
+}

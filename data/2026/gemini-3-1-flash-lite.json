@@ -1,0 +1,20 @@
+{
+  "date": "2026-03-03",
+  "title": "Gemini 3.1 Flash-Lite Released",
+  "organization": "Google",
+  "level": "high",
+  "tags": ["google", "model-release", "gemini", "llm", "productivity"],
+  "description": "Google released Gemini 3.1 Flash-Lite as its fastest and most cost-efficient Gemini 3 series model. The preview focused on high-volume developer workloads where low latency, lower cost, and good quality all matter at scale.",
+  "highlights": [
+    "Fastest Gemini 3 series model",
+    "Cost-efficient high-volume workload focus",
+    "Preview availability in Gemini API and Vertex AI",
+    "Built for responsive real-time experiences"
+  ],
+  "sources": [
+    {
+      "title": "Gemini 3.1 Flash-Lite: Built for intelligence at scale",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite"
+    }
+  ]
+}

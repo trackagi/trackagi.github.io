@@ -1,0 +1,21 @@
+{
+  "date": "2023-03-15",
+  "title": "Midjourney v5 Released",
+  "organization": "Midjourney",
+  "level": "high",
+  "tags": ["midjourney", "model-release", "image-generation", "generative-ai"],
+  "description": "Midjourney released version 5, achieving photorealistic quality that rivaled or exceeded DALL-E 3 and Stable Diffusion. The model produced highly detailed images with better coherence, texture, and lighting. It became the go-to tool for creating professional-quality AI imagery and sparked discussions about AI replacing stock photography.",
+  "highlights": [
+    "Photorealistic image quality",
+    "Superior texture and lighting",
+    "Better hand and finger rendering",
+    "Higher resolution outputs",
+    "Professional photography quality"
+  ],
+  "sources": [
+    {
+      "title": "Midjourney v5 Release Notes",
+      "url": "https://www.midjourney.com/"
+    }
+  ]
+}

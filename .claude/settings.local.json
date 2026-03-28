@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l /home/immortal/code/agi-progress/data/*/*.json)",
+      "Bash(ls /home/immortal/code/agi-progress/data/2025/*.json)",
+      "Bash(ls /home/immortal/code/agi-progress/data/2024/*.json)",
+      "Bash(uv run:*)",
+      "Bash(uv sync:*)",
+      "mcp__plugin_github_github__search_repositories",
+      "mcp__plugin_github_github__get_me",
+      "Bash(gh repo:*)",
+      "Bash(gh api:*)",
+      "Bash(git init:*)",
+      "Bash(git checkout:*)",
+      "mcp__plugin_github_github__create_repository",
+      "Bash(git remote:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(gh run:*)",
+      "Bash(curl -sI https://trackagi.github.io/)",
+      "Bash(gh workflow:*)",
+      "Bash(curl -s https://trackagi.github.io/)",
+      "WebFetch(domain:dipkumar.dev)"
+    ]
+  }
+}

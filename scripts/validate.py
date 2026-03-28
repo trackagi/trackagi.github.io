@@ -63,6 +63,9 @@ VALID_ORGANIZATIONS = [
     "Databricks",
     "Moonshot AI",
     "IBM",
+    "Adobe",
+    "Black Forest Labs",
+    "Midjourney",
 ]
 VALID_LEVELS = ["high", "low"]
 VALID_TAGS = {
@@ -184,6 +187,17 @@ VALID_TAGS = {
     "command-r",
     "granite",
     "arc-agi",
+    "alibaba",
+    "allen-institute-for-ai",
+    "cohere",
+    "midjourney",
+    "firefly",
+    "runway",
+    "pika",
+    "black-forest-labs",
+    "adobe",
+    "flux",
+    "sora",
     # Product and ecosystem tags
     "bard",
     "claude-code",

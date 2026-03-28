@@ -1,0 +1,21 @@
+{
+  "date": "2024-02-15",
+  "title": "OpenAI Sora Video Generation Model",
+  "organization": "OpenAI",
+  "level": "high",
+  "tags": ["openai", "model-release", "video-generation", "sora", "generative-ai", "multimodal"],
+  "description": "OpenAI unveiled Sora, a text-to-video AI model capable of generating high-quality videos up to 60 seconds long. Sora demonstrated understanding of physics, complex camera movements, and consistent character appearances across frames. It represented a major breakthrough in AI video generation, producing cinematic-quality outputs from text prompts alone.",
+  "highlights": [
+    "Up to 60-second video generation",
+    "Complex camera movements and physics",
+    "Consistent characters and scenes",
+    "Multiple shots in single generation",
+    "Cinematic quality outputs"
+  ],
+  "sources": [
+    {
+      "title": "Sora: Creating Video from Text",
+      "url": "https://openai.com/index/sora-first-impressions/"
+    }
+  ]
+}

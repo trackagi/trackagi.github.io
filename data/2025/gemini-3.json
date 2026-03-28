@@ -1,0 +1,21 @@
+{
+  "date": "2025-11-18",
+  "title": "Gemini 3 Released",
+  "organization": "Google",
+  "level": "high",
+  "tags": ["google", "model-release", "gemini", "llm", "multimodal"],
+  "description": "Google released Gemini 3, its most intelligent Gemini model to date. The launch highlighted stronger reasoning, improved multimodal understanding, and wider access across the Gemini app, AI Studio, and Vertex AI.",
+  "highlights": [
+    "Gemini 3 Pro for general model access",
+    "Improved reasoning and coding performance",
+    "Stronger multimodal capabilities",
+    "Available across Gemini app, AI Studio, and Vertex AI",
+    "Deep Think mode announced for advanced use"
+  ],
+  "sources": [
+    {
+      "title": "Gemini 3",
+      "url": "https://blog.google/products/gemini/gemini-3"
+    }
+  ]
+}
