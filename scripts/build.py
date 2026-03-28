@@ -6,6 +6,7 @@ Aggregates all JSON data files and generates the static site.
 
 import json
 import shutil
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -116,17 +117,94 @@ def generate_html(data: dict[str, Any]) -> str:
     start_year = date_range["start"][:4] if date_range["start"] else "2013"
     end_year = date_range["end"][:4] if date_range["end"] else "Present"
 
+    total_milestones = data["meta"]["total_milestones"]
+    total_orgs = len(data["meta"]["organizations"])
+
+    # SEO meta data
+    canonical_url = "https://trackagi.github.io"
+    title = "AGI Progress Tracker | AI Milestones Timeline"
+    description = f"Track {total_milestones} AI milestones from {start_year} to {end_year}. A comprehensive timeline of model launches, research breakthroughs, and product releases from {total_orgs} leading AI organizations including OpenAI, Google, Anthropic, and more."
+    og_image = "https://trackagi.github.io/og-image.svg"
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AGI Progress Tracker</title>
-    <meta
-        name="description"
-        content="A readable timeline of AI milestones, model launches, and research breakthroughs from 2013 to today."
-    >
+    <title>{title}</title>
+    <meta name="description" content="{description}">
+    <meta name="author" content="dipkumar.dev">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="AGI, AI milestones, artificial intelligence timeline, OpenAI, GPT, ChatGPT, Google AI, Anthropic, Claude, LLM, machine learning, AI research, AI models, AI progress">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{canonical_url}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{canonical_url}">
+    <meta property="og:title" content="{title}">
+    <meta property="og:description" content="{description}">
+    <meta property="og:image" content="{og_image}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="AGI Progress Tracker">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{canonical_url}">
+    <meta property="twitter:title" content="{title}">
+    <meta property="twitter:description" content="{description}">
+    <meta property="twitter:image" content="{og_image}">
+    <meta property="twitter:creator" content="@immortal_0698">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#fafafa">
+    <meta name="msapplication-TileColor" content="#fafafa">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {{
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AGI Progress Tracker",
+      "url": "{canonical_url}",
+      "description": "{description}",
+      "author": {{
+        "@type": "Person",
+        "name": "dipkumar.dev",
+        "url": "https://dipkumar.dev"
+      }},
+      "publisher": {{
+        "@type": "Organization",
+        "name": "AGI Progress Tracker",
+        "logo": {{
+          "@type": "ImageObject",
+          "url": "{og_image}"
+        }}
+      }},
+      "mainEntity": {{
+        "@type": "ItemList",
+        "itemListElement": [
+          {{
+            "@type": "ListItem",
+            "position": 1,
+            "item": {{
+              "@type": "WebPage",
+              "name": "AI Milestones Timeline",
+              "description": "Comprehensive timeline tracking {total_milestones} AI milestones"
+            }}
+          }}
+        ]
+      }}
+    }}
+    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -245,6 +323,95 @@ def generate_html(data: dict[str, Any]) -> str:
 </html>"""
 
 
+def generate_robots_txt(dist_dir: str | Path = "dist") -> None:
+    """Generate robots.txt for search engine crawlers."""
+    dist_path = resolve_repo_path(dist_dir)
+    canonical_url = "https://trackagi.github.io"
+
+    content = f"""User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: {canonical_url}/sitemap.xml
+
+# Crawl rate (optional, helps manage server load)
+Crawl-delay: 1
+"""
+
+    with (dist_path / "robots.txt").open("w", encoding="utf-8") as handle:
+        handle.write(content)
+    print(f"Generated {dist_path / 'robots.txt'}")
+
+
+def generate_sitemap_xml(milestones: list[dict[str, Any]], dist_dir: str | Path = "dist") -> None:
+    """Generate sitemap.xml for SEO."""
+    dist_path = resolve_repo_path(dist_dir)
+    canonical_url = "https://trackagi.github.io"
+
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    # Build sitemap entries
+    urls = [
+        f"""  <url>
+    <loc>{canonical_url}/</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>"""
+    ]
+
+    # Add entries for each year with milestones
+    years = set()
+    for milestone in milestones:
+        year = milestone["date"][:4]
+        years.add(year)
+
+    for year in sorted(years, reverse=True):
+        urls.append(f"""  <url>
+    <loc>{canonical_url}/#{year}</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>""")
+
+    content = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{chr(10).join(urls)}
+</urlset>
+"""
+
+    with (dist_path / "sitemap.xml").open("w", encoding="utf-8") as handle:
+        handle.write(content)
+    print(f"Generated {dist_path / 'sitemap.xml'}")
+
+
+def generate_404_html(dist_dir: str | Path = "dist") -> None:
+    """Generate a custom 404 page for GitHub Pages."""
+    dist_path = resolve_repo_path(dist_dir)
+    html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | AGI Progress Tracker</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+</head>
+<body>
+    <div class="page-shell">
+        <section class="empty-state" style="margin-top:80px">
+            <p class="section-eyebrow">404</p>
+            <h2>Page not found</h2>
+            <p><a href="/">Back to the timeline</a></p>
+        </section>
+    </div>
+</body>
+</html>"""
+    with (dist_path / "404.html").open("w", encoding="utf-8") as handle:
+        handle.write(html)
+    print(f"Generated {dist_path / '404.html'}")
+
+
 def copy_static_files(dist_dir: str | Path = "dist") -> None:
     """Copy CSS and JavaScript assets into the build output directory."""
     dist_path = resolve_repo_path(dist_dir)
@@ -262,6 +429,10 @@ def copy_static_files(dist_dir: str | Path = "dist") -> None:
 
     if js_source.exists():
         shutil.copy2(js_source, js_dest)
+
+    og_source = REPO_ROOT / "static" / "og-image.svg"
+    if og_source.exists():
+        shutil.copy2(og_source, dist_path / "og-image.svg")
 
 
 def build(dist_dir: str | Path = "dist", data_dir: str | Path = "data") -> bool:
@@ -308,6 +479,12 @@ def build(dist_dir: str | Path = "dist", data_dir: str | Path = "data") -> bool:
     copy_static_files(dist_dir)
     print("Copied static files\n")
 
+    print("Generating SEO files...")
+    generate_robots_txt(dist_dir)
+    generate_sitemap_xml(milestones, dist_dir)
+    generate_404_html(dist_dir)
+    print("Generated SEO files\n")
+
     print("=" * 50)
     print("Build completed successfully")
     print(f"Output directory: {dist_path}")
@@ -315,8 +492,7 @@ def build(dist_dir: str | Path = "dist", data_dir: str | Path = "data") -> bool:
     print(f"Organizations: {len(indexes['organizations'])}")
     print(f"Tags: {len(indexes['tags'])}")
     print(
-        "Date range: "
-        f"{data['meta']['date_range']['start']} to {data['meta']['date_range']['end']}"
+        f"Date range: {data['meta']['date_range']['start']} to {data['meta']['date_range']['end']}"
     )
     print("=" * 50)
     return True

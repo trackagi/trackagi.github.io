@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#fafafa"/>
+  <rect x="0" y="0" width="1200" height="4" fill="#2563eb"/>
+
+  <!-- Timeline line -->
+  <line x1="200" y1="180" x2="200" y2="520" stroke="#e5e7eb" stroke-width="2"/>
+
+  <!-- Dots -->
+  <circle cx="200" cy="220" r="6" fill="#0f766e"/>
+  <circle cx="200" cy="300" r="6" fill="#2563eb"/>
+  <circle cx="200" cy="380" r="6" fill="#b45309"/>
+  <circle cx="200" cy="460" r="6" fill="#4f46e5"/>
+
+  <!-- Title -->
+  <text x="100" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="700" fill="#111827" letter-spacing="-1.5">AGI Progress Tracker</text>
+  <text x="100" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#4b5563">A comprehensive timeline of AI milestones</text>
+
+  <!-- Sample entries -->
+  <text x="240" y="228" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#111827">ChatGPT Launch</text>
+  <text x="500" y="228" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#9ca3af">OpenAI</text>
+
+  <text x="240" y="308" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#111827">Gemini 1.5 Pro</text>
+  <text x="480" y="308" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#9ca3af">Google</text>
+
+  <text x="240" y="388" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#111827">Claude 3.7 Sonnet</text>
+  <text x="510" y="388" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#9ca3af">Anthropic</text>
+
+  <text x="240" y="468" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#111827">DeepSeek-R1</text>
+  <text x="440" y="468" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#9ca3af">DeepSeek</text>
+
+  <!-- URL -->
+  <text x="100" y="580" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#9ca3af">trackagi.github.io</text>
+</svg>
